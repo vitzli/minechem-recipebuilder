@@ -1,0 +1,566 @@
+
+        else if(event.Name.contains("cell_1be")) {
+            DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(Be, 2) ));
+            // no special synthesis rule
+
+        }
+
+        else if(event.Name.contains("cell_1c")) {
+            DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(C, 4) ));
+            // no special synthesis rule
+
+        }
+
+        else if(event.Name.contains("cell_1c_4h")) {
+            DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(C, 1), new Element(H, 4) ));
+            // no special synthesis rule
+
+        }
+
+        else if(event.Name.contains("cell_1ca")) {
+            DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(Ca, 2) ));
+            // no special synthesis rule
+
+        }
+
+        else if(event.Name.contains("cell_1ca_1c_3o")) {
+            DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Molecule(calcite, 2) ));
+            // no special synthesis rule
+
+        }
+
+        else if(event.Name.contains("cell_1cl")) {
+            DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(Cl, 2) ));
+            // no special synthesis rule
+
+        }
+
+        else if(event.Name.contains("cell_1h")) {
+            DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(H, 2) ));
+            // no special synthesis rule
+
+        }
+
+        else if(event.Name.contains("cell_1h2")) {
+            DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(H, 4) ));
+            // no special synthesis rule
+
+        }
+
+        else if(event.Name.contains("cell_1h3")) {
+            DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(H, 6) ));
+            // no special synthesis rule
+
+        }
+
+        else if(event.Name.contains("cell_1he")) {
+            DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(He, 2) ));
+            // no special synthesis rule
+
+        }
+
+        else if(event.Name.contains("cell_1he3")) {
+            DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(He, 4) ));
+            // no special synthesis rule
+
+        }
+
+        else if(event.Name.contains("cell_1hg")) {
+            DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(Hg, 2) ));
+            // no special synthesis rule
+
+        }
+
+        else if(event.Name.contains("cell_1k")) {
+            DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(K, 2) ));
+            // no special synthesis rule
+
+        }
+
+        else if(event.Name.contains("cell_1li")) {
+            DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(Li, 1) ));
+            // no special synthesis rule
+
+        }
+
+        else if(event.Name.contains("cell_1si")) {
+            DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(Si, 2) ));
+            // no special synthesis rule
+
+        }
+
+        else if(event.Name.contains("cell_1w")) {
+            DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(W, 2) ));
+            // no special synthesis rule
+
+        }
+
+        else if(event.Name.contains("cell_2na_2s_8o")) {
+            DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(Na, 2), new Element(S, 2), new Element(O, 8) ));
+            // no special synthesis rule
+
+        }
+
+        else if(event.Name.contains("cell_2o")) {
+            DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(O, 4) ));
+            // no special synthesis rule
+
+        }
+
+        else if(event.Name.contains("cell_3c_5h_3n_9o")) {
+            DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(C, 3), new Element(H, 5), new Element(N, 3), new Element(O, 9) ));
+            // no special synthesis rule
+
+        }
+
+        else if(event.Name.contains("crystallineCopper")) {
+            DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(Cu, 2) ));
+            // no special synthesis rule
+
+        }
+
+        else if(event.Name.contains("crystallineGalena")) {
+            DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(Pb, 1), new Element(S, 1) ));
+            // no special synthesis rule
+
+        }
+
+        else if(event.Name.contains("crystallineGold")) {
+            DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(Au, 2) ));
+            // no special synthesis rule
+
+        }
+
+        else if(event.Name.contains("crystallineIron")) {
+            DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(Fe, 2) ));
+            // no special synthesis rule
+
+        }
+
+        else if(event.Name.contains("crystallineLead")) {
+            DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(Pb, 2) ));
+            // no special synthesis rule
+
+        }
+
+        else if(event.Name.contains("crystallineSilver")) {
+            DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(Ag, 2) ));
+            // no special synthesis rule
+
+        }
+
+        else if(event.Name.contains("crystallineTin")) {
+            DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(Sn, 2) ));
+            // no special synthesis rule
+
+        }
+
+        else if(event.Name.contains("dropHoneydew")) {
+            DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Molecule(sucrose, 1) ));
+            // no special synthesis rule
+
+        }
+
+        else if(event.Name.contains("dropRoyalJelly")) {
+            DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Molecule(sucrose, 2) ));
+            // no special synthesis rule
+
+        }
+
+        else if(event.Name.contains("dropUranium")) {
+            DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(U, 1), new Element(O, 4) ));
+            // no special synthesis rule
+
+        }
+
+        else if(event.Name.contains("dustAlmandine")) {
+            DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(Al, 2), new Element(Fe, 3), new Element(Si, 3), new Element(O, 12) ));
+            // no special synthesis rule
+
+        }
+
+        else if(event.Name.contains("dustAluminium")) {
+            DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(Al, 2) ));
+            // no special synthesis rule
+
+        }
+
+        else if(event.Name.contains("dustAndradite")) {
+            DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(Ca, 3), new Element(Fe, 2), new Element(Si, 3), new Element(O, 12) ));
+            // no special synthesis rule
+
+        }
+
+        else if(event.Name.contains("dustAsh")) {
+            DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(C, 1) ));
+            // no special synthesis rule
+
+        }
+
+        else if(event.Name.contains("dustBasalt")) {
+            DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Molecule(calcite, 3), new Molecule(siliconDioxide, 8), new Element(Mg, 2), new Element(Fe, 2), new Element(Si, 1), new Element(O, 4), new Element(C, 4) ));
+            // no special synthesis rule
+
+        }
+
+        else if(event.Name.contains("dustBauxite")) {
+            DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(Ti, 1), new Element(Al, 16), new Element(H, 10), new Element(O, 12) ));
+            // no special synthesis rule
+
+        }
+
+        else if(event.Name.contains("dustBrass")) {
+            DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(Zn, 1), new Element(Cu, 3) ));
+            // no special synthesis rule
+
+        }
+
+        else if(event.Name.contains("dustBronze")) {
+            DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(Cu, 3), new Element(Sn, 1) ));
+            // no special synthesis rule
+
+        }
+
+        else if(event.Name.contains("dustCalcite")) {
+            DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Molecule(calcite, 1) ));
+            // no special synthesis rule
+
+        }
+
+        else if(event.Name.contains("dustCharcoal")) {
+            DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(C, 4) ));
+            // no special synthesis rule
+
+        }
+
+        else if(event.Name.contains("dustChrome")) {
+            DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(Cr, 1) ));
+            // no special synthesis rule
+
+        }
+
+        else if(event.Name.contains("dustCinnabar")) {
+            DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(Hg, 1), new Element(S, 1) ));
+            // no special synthesis rule
+
+        }
+
+        else if(event.Name.contains("dustClay")) {
+            DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Molecule(kaolinite, 1) ));
+            // no special synthesis rule
+
+        }
+
+        else if(event.Name.contains("dustCoal")) {
+            DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(C, 4) ));
+            // no special synthesis rule
+
+        }
+
+        else if(event.Name.contains("dustCopper")) {
+            DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(Cu, 1) ));
+            // no special synthesis rule
+
+        }
+
+        else if(event.Name.contains("dustDiamond")) {
+            DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(C, 64) ));
+            // no special synthesis rule
+
+        }
+
+        else if(event.Name.contains("dustElectrum")) {
+            DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(Ag, 1), new Element(Au, 1) ));
+            // no special synthesis rule
+
+        }
+
+        else if(event.Name.contains("dustEmerald")) {
+            DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(Be, 3), new Element(Al, 2), new Element(Si, 6), new Element(O, 18) ));
+            // no special synthesis rule
+
+        }
+
+        else if(event.Name.contains("dustEnderEye")) {
+            DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(Be, 1), new Element(K, 4), new Element(N, 5), new Element(Cl, 6), new Element(C, 4), new Element(S, 2) ));
+            // no special synthesis rule
+
+        }
+
+        else if(event.Name.contains("dustEnderPearl")) {
+            DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(Be, 1), new Element(K, 4), new Element(N, 5), new Element(Cl, 6) ));
+            // no special synthesis rule
+
+        }
+
+        else if(event.Name.contains("dustGarnetRed")) {
+            DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(Al, 32), new Element(Mg, 9), new Element(Si, 42), new Element(O, 168), new Element(Fe, 15), new Element(Mn, 24) ));
+            // no special synthesis rule
+
+        }
+
+        else if(event.Name.contains("dustGarnetYellow")) {
+            DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(Ca, 48), new Element(Fe, 10), new Element(Si, 48), new Element(O, 192), new Element(Al, 16), new Element(Cr, 6) ));
+            // no special synthesis rule
+
+        }
+
+        else if(event.Name.contains("dustGold")) {
+            DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(Au, 2) ));
+            // no special synthesis rule
+
+        }
+
+        else if(event.Name.contains("dustGreenSapphire")) {
+            DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(Al, 2), new Element(O, 6) ));
+            // no special synthesis rule
+
+        }
+
+        else if(event.Name.contains("dustGrossular")) {
+            DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(Ca, 3), new Element(Al, 2), new Element(Si, 3), new Element(O, 12) ));
+            // no special synthesis rule
+
+        }
+
+        else if(event.Name.contains("dustInvar")) {
+            DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(Fe, 2), new Element(Ni, 1) ));
+            // no special synthesis rule
+
+        }
+
+        else if(event.Name.contains("dustIron")) {
+            DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(Fe, 2) ));
+            // no special synthesis rule
+
+        }
+
+        else if(event.Name.contains("dustLazurite")) {
+            DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(Al, 6), new Element(Si, 6), new Element(Ca, 8), new Element(Na, 8) ));
+            // no special synthesis rule
+
+        }
+
+        else if(event.Name.contains("dustLead")) {
+            DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(Pb, 1) ));
+            // no special synthesis rule
+
+        }
+
+        else if(event.Name.contains("dustMagnesium")) {
+            DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(Mg, 1) ));
+            // no special synthesis rule
+
+        }
+
+        else if(event.Name.contains("dustManganese")) {
+            DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(Mn, 1) ));
+            // no special synthesis rule
+
+        }
+
+        else if(event.Name.contains("dustMarble")) {
+            DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Molecule(calcite, 7), new Element(Mg, 1) ));
+            // no special synthesis rule
+
+        }
+
+        else if(event.Name.contains("dustNickel")) {
+            DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(Ni, 1) ));
+            // no special synthesis rule
+
+        }
+
+        else if(event.Name.contains("dustObsidian")) {
+            DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(Mg, 1), new Element(Fe, 1), new Element(Si, 1), new Element(O, 8) ));
+            // no special synthesis rule
+
+        }
+
+        else if(event.Name.contains("dustOlivine")) {
+            DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(Mg, 2), new Element(Fe, 2), new Element(Si, 1), new Element(O, 4) ));
+            // no special synthesis rule
+
+        }
+
+        else if(event.Name.contains("dustPlatinum")) {
+            DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(Pt, 1) ));
+            // no special synthesis rule
+
+        }
+
+        else if(event.Name.contains("dustPyrite")) {
+            DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Molecule(pyrite, 1) ));
+            // no special synthesis rule
+
+        }
+
+        else if(event.Name.contains("dustPyrope")) {
+            DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(Al, 2), new Element(Mg, 3), new Element(Si, 1), new Element(O, 4) ));
+            // no special synthesis rule
+
+        }
+
+        else if(event.Name.contains("dustQuicksilver")) {
+            DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(Hg, 2) ));
+            // no special synthesis rule
+
+        }
+
+        else if(event.Name.contains("dustRedRock")) {
+            DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Molecule(calcite, 2), new Molecule(siliconDioxide, 1) ));
+            // no special synthesis rule
+
+        }
+
+        else if(event.Name.contains("dustRuby")) {
+            DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(Al, 2), new Element(O, 6), new Element(Cr, 1) ));
+            // no special synthesis rule
+
+        }
+
+        else if(event.Name.contains("dustSaltpeter")) {
+            DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Molecule(potassiumNitrate, 1) ));
+            // no special synthesis rule
+
+        }
+
+        else if(event.Name.contains("dustSapphire")) {
+            DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(Al, 2), new Element(O, 6) ));
+            // no special synthesis rule
+
+        }
+
+        else if(event.Name.contains("dustSpessartine")) {
+            DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(Al, 2), new Element(Mn, 3), new Element(Si, 3), new Element(O, 12) ));
+            // no special synthesis rule
+
+        }
+
+        else if(event.Name.contains("dustSteel")) {
+            DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(Fe, 1) ));
+            // no special synthesis rule
+
+        }
+
+        else if(event.Name.contains("dustSilver")) {
+            DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(Ag, 1) ));
+            // no special synthesis rule
+
+        }
+
+        else if(event.Name.contains("dustSodalite")) {
+            DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(Al, 3), new Element(Si, 3), new Element(Na, 4), new Element(Cl, 1) ));
+            // no special synthesis rule
+
+        }
+
+        else if(event.Name.contains("dustSulfur")) {
+            DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(S, 1) ));
+            // no special synthesis rule
+
+        }
+
+        else if(event.Name.contains("dustTin")) {
+            DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(Sn, 1) ));
+            // no special synthesis rule
+
+        }
+
+        else if(event.Name.contains("dustTitanium")) {
+            DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(Ti, 2) ));
+            // no special synthesis rule
+
+        }
+
+        else if(event.Name.contains("dustTungsten")) {
+            DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(W, 1) ));
+            // no special synthesis rule
+
+        }
+
+        else if(event.Name.contains("dustUranium")) {
+            DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(U, 1) ));
+            // no special synthesis rule
+
+        }
+
+        else if(event.Name.contains("dustUvarovite")) {
+            DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(Ca, 3), new Element(Cr, 2), new Element(Si, 3), new Element(O, 12) ));
+            // no special synthesis rule
+
+        }
+
+        else if(event.Name.contains("dustWood")) {
+            DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Molecule(cellulose, 1) ));
+            // no special synthesis rule
+
+        }
+
+        else if(event.Name.contains("dustZinc")) {
+            DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(Zn, 1) ));
+            // no special synthesis rule
+
+        }
+
+        else if(event.Name.contains("fuelCoke")) {
+            DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(C, 4) ));
+            // no special synthesis rule
+
+        }
+
+        else if(event.Name.contains("ingotInvar")) {
+            DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(Fe, 2), new Element(Ni, 1) ));
+            // no special synthesis rule
+
+        }
+
+        else if(event.Name.contains("ingotMagnesium")) {
+            DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(Mg, 2) ));
+            // no special synthesis rule
+
+        }
+
+        else if(event.Name.contains("ingotQuicksilver")) {
+            DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(Hg, 2) ));
+            // no special synthesis rule
+
+        }
+
+        else if(event.Name.contains("nuggetCopper")) {
+            DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(Cu, 1) ));
+            // no special synthesis rule
+
+        }
+
+        else if(event.Name.contains("nuggetIron")) {
+            DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(Fe, 1) ));
+            // no special synthesis rule
+
+        }
+
+        else if(event.Name.contains("nuggetLead")) {
+            DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(Pb, 1) ));
+            // no special synthesis rule
+
+        }
+
+        else if(event.Name.contains("nuggetSilver")) {
+            DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(Ag, 1) ));
+            // no special synthesis rule
+
+        }
+
+        else if(event.Name.contains("nuggetTin")) {
+            DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(Sn, 1) ));
+            // no special synthesis rule
+
+        }
+
+        else if(event.Name.contains("pulpWood")) {
+            DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Molecule(cellulose, 1) ));
+            // no special synthesis rule
+
+        }
+
+

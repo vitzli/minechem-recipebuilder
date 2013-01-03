@@ -1,0 +1,217 @@
+# run as create_recipe.py o minechem-ore.txt > your_file.txt
+cell_1be Be2
+cell_1c C4
+cell_1c_4h CH4
+cell_1ca Ca2
+cell_1ca_1c_3o calcite 2
+cell_1cl Cl2
+cell_1d
+cell_1h H2
+cell_1h2 H4
+cell_1h3 H6
+cell_1he He2
+cell_1he3 He4
+cell_1hg Hg2
+cell_1k K2
+cell_1li Li
+cell_1si Si2
+cell_1w W2
+cell_2na_2s_8o (NaSO4)2
+cell_2o O4
+cell_3c_5h_3n_9o C3H5N3O9
+
+crystallineCopper Cu2
+crystallineGalena PbS
+crystallineGold Au2
+crystallineIron Fe2
+crystallineLead Pb2
+crystallineSilver Ag2
+crystallineTin Sn2
+
+dropHoneydew sucrose
+dropRoyalJelly sucrose 2
+dropUranium UO4
+
+dustAlmandine Al2Fe3Si3O12
+dustAluminium Al2
+dustAndradite Ca3Fe2Si3O12
+dustAsh C
+dustBasalt calcite 3 siliconDioxide 8 Mg2Fe2SiO4C4
+dustBauxite TiAl16H10O12
+dustBrass ZnCu3
+dustBronze Cu3Sn
+dustCalcite calcite
+dustCharcoal C4
+dustChrome Cr
+dustCinnabar HgS
+dustClay kaolinite
+dustCoal C4
+dustCopper Cu
+dustDiamond C64
+dustElectrum AgAu
+dustEmerald Be3Al2Si6O18
+dustEnderEye BeK4N5Cl6C4S2
+dustEnderPearl BeK4N5Cl6
+dustGarnetRed (Al2Mg3SiO4)3(Al2Fe3Si3O12)5(Al2Mn3Si3O12)8
+dustGarnetYellow (Ca3Fe2Si3O12)5(Ca3Al2Si3O12)8(Ca3Cr2Si3O12)3
+dustGold Au2
+dustGreenSapphire Al2O6
+dustGrossular Ca3Al2Si3O12
+dustInvar Fe2Ni
+dustIron Fe2
+dustLazurite Al6Si6Ca8Na8
+dustLead Pb
+dustMagnesium Mg
+dustManganese Mn
+dustMarble calcite 7 Mg
+dustNetherrack
+dustNickel Ni
+dustNikolite
+dustObsidian MgFeSiO8
+dustOlivine Mg2Fe2SiO4
+dustPlatinum Pt
+dustPyrite pyrite
+dustPyrope Al2Mg3SiO4
+dustQuicksilver Hg2
+dustRedRock calcite 2 siliconDioxide
+dustRuby Al2O6Cr
+dustSaltpeter potassiumNitrate
+dustSapphire Al2O6
+dustSpessartine Al2Mn3Si3O12
+dustSteel Fe
+dustSilver Ag
+dustSodalite Al3Si3Na4Cl
+dustSulfur S
+dustTin Sn
+dustTitanium Ti2
+dustTungsten W
+dustUranium U
+dustUvarovite Ca3Cr2Si3O12
+dustWood cellulose
+dustZinc Zn
+
+fuelCoke C4
+
+ingotInvar Fe2Ni
+ingotMagnesium Mg2
+ingotQuicksilver Hg2
+
+itemDustAlmandine
+itemDustAluminium
+itemDustAndradite
+itemDustAsh
+itemDustBasalt
+itemDustBauxite
+itemDustBrass
+itemDustCalcite
+itemDustCharcoal
+itemDustChrome
+itemDustCinnabar
+itemDustDiamond
+itemDustElectrum
+itemDustEmerald
+itemDustEnderEye
+itemDustEnderPearl
+itemDustEndstone
+itemDustFlint
+itemDustGarnetRed
+itemDustGarnetYellow
+itemDustGreenSapphire
+itemDustGrossular
+itemDustLazurite
+itemDustLead
+itemDustMagnesium
+itemDustManganese
+itemDustMarble
+itemDustNetherrack
+itemDustNickel
+itemDustObsidian
+itemDustOlivine
+itemDustPlatinum
+itemDustPyrite
+itemDustPyrope
+itemDustRedRock
+itemDustRuby
+itemDustSaltpeter
+itemDustSapphire
+itemDustSmallAlmandine
+itemDustSmallAluminium
+itemDustSmallAndradite
+itemDustSmallAsh
+itemDustSmallBasalt
+itemDustSmallBauxite
+itemDustSmallBrass
+itemDustSmallBronze
+itemDustSmallCalcite
+itemDustSmallCharcoal
+itemDustSmallChrome
+itemDustSmallCinnabar
+itemDustSmallClay
+itemDustSmallCoal
+itemDustSmallCopper
+itemDustSmallDiamond
+itemDustSmallElectrum
+itemDustSmallEmerald
+itemDustSmallEnderEye
+itemDustSmallEnderPearl
+itemDustSmallEndstone
+itemDustSmallFlint
+itemDustSmallGarnetRed
+itemDustSmallGarnetYellow
+itemDustSmallGlowstone
+itemDustSmallGold
+itemDustSmallGreenSapphire
+itemDustSmallGrossular
+itemDustSmallGunpowder
+itemDustSmallIron
+itemDustSmallLazurite
+itemDustSmallLead
+itemDustSmallMagnesium
+itemDustSmallManganese
+itemDustSmallMarble
+itemDustSmallNetherrack
+itemDustSmallNickel
+itemDustSmallObsidian
+itemDustSmallOlivine
+itemDustSmallPlatinum
+itemDustSmallPyrite
+itemDustSmallPyrope
+itemDustSmallRedRock
+itemDustSmallRedstone
+itemDustSmallRuby
+itemDustSmallSaltpeter
+itemDustSmallSapphire
+itemDustSmallSilver
+itemDustSmallSodalite
+itemDustSmallSpessartine
+itemDustSmallSphalerite
+itemDustSmallSteel
+itemDustSmallSulfur
+itemDustSmallTin
+itemDustSmallTitanium
+itemDustSmallTungsten
+itemDustSmallUranium
+itemDustSmallUvarovite
+itemDustSmallWood
+itemDustSmallZinc
+itemDustSodalite
+itemDustSpessartine
+itemDustSphalerite
+itemDustSteel
+itemDustSulfur
+itemDustTitanium
+itemDustTungsten
+itemDustUranium
+itemDustUvarovite
+itemDustWood
+itemDustZinc
+itemIridium
+itemRubber
+
+nuggetCopper Cu
+nuggetIron Fe
+nuggetLead Pb
+nuggetSilver Ag
+nuggetTin Sn
+
+pulpWood cellulose

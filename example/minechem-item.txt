@@ -1,0 +1,4 @@
+# run it as create_recipe.py i minechem-item.txt > your_file.txt
+wheat C10H10O4
+rottenFlesh ammonium CH4
+bread 10 sucrose 3

@@ -1,0 +1,14 @@
+            ItemStack wheat = new ItemStack(Item.wheat);
+            ItemStack rottenFlesh = new ItemStack(Item.rottenFlesh);
+            ItemStack bread = new ItemStack(Item.bread);
+
+            DecomposerRecipe.add(new DecomposerRecipe(wheat, new Element(C, 10), new Element(H, 10), new Element(O, 4) ));
+            // no special synthesis rule
+
+            DecomposerRecipe.add(new DecomposerRecipe(rottenFlesh, new Molecule(ammonium, 1), new Element(C, 1), new Element(H, 4) ));
+            // no special synthesis rule
+
+            DecomposerRecipe.add(new DecomposerRecipe(bread, new Molecule(sucrose, 3) ));
+            SynthesisRecipe.add(new SynthesisRecipe(bread, false, 10, new Molecule(sucrose, 3) ));
+
+
