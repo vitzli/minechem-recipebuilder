@@ -1,6 +1,7 @@
 ﻿# -*- coding: UTF-8 -*-
 
 # chemical formula parser
+# v2
 import re
 
 ATOM_REGEX = r"(A[cglmrstu]|B[aehikr]?|C[adeflmnorsu]?|D[bsy]|"\
