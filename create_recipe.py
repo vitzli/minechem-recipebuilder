@@ -99,15 +99,13 @@ mol_lst=self.mol_lst, elem_lst=self.elem_lst, recipe_str=self.recipeString)
             
             # probably it's a formula
             try:
-                parse_result = chemparse.parse_formula(item)
-                parse_elem_order = chemparse.sorting_order(item)
-                new_elems = list(filter(self.isNotPresent,parse_elem_order))
+                FP = chemparse.FormulaParser(item)
+                new_elems = list(filter(self.isNotPresent,FP.sorting_order))
                 self.element_order.extend(new_elems)
-                for k, v in parse_result.items():
+                for k, v in FP:
                     #print("k=",k,"v=",v)
                     if self.elemDict.get(k) is not None:
                         self.elemDict[k] = self.elemDict[k] + v
-                        #print("adding {v} to elemDict[{k}]:".format(k=k,v=v))
                     else:
                         self.elemDict[k] = v
             except:

@@ -14,105 +14,121 @@ ATOMN_REGEX = ATOM_REGEX + "(\d*)"
 LDEL_REGEX= r'\('
 RDEL_REGEX= r'\)(\d*)'
 
-def sorting_order(formula):
-    allElemList = [x[0] for x in re.findall(ATOM_REGEX,formula)]
-    out = []
-    for item in allElemList:
-        if item not in out:
-            out.append(item)
-    return out
+class FormulaParser:
+    def __init__(self,formula=""):
+        self.re_atom = re.compile(ATOMN_REGEX)
+        self.re_ldel = re.compile(LDEL_REGEX)
+        self.re_rdel = re.compile(RDEL_REGEX)
+        if formula!="":
+            self.__call__(formula)
 
-def atoms(formula='', debug=False, stack=[], delim=0, \
-          atom=ATOMN_REGEX, ldel=LDEL_REGEX, rdel=RDEL_REGEX):
-
-    if formula == "":
-        return []
-
-    stack = stack or []
-
-    re_atom = re.search(atom,formula)
-    re_ldel = re.search(ldel,formula)
-    re_rdel = re.search(rdel,formula)
-
-    swA = True if re.search("[A-Z]",formula[0]) is not None else False
-    swL = True if re.search(ldel,formula[0]) is not None else False
-    swR = True if re.search(rdel,formula[0]) else False
-
-    if swA:
-
-        tail = formula[len(re_atom.group()):]
-        #print("re_atom.group length = ",len(re_atom.group()))
-        head = re_atom.group(1)
-        num  = int(re_atom.group(3)) if re_atom.group(3) is not "" else 1
-        
-        if debug:
-            print("head=",head, "num=",num, "tail=",tail)
-
-        if len(stack)>0:
-            if stack[-1].get(head):              # verbose testing of Hash key
-                stack[-1][head] = stack[-1][head] + num                           # increment occurence
-            else:
-                stack[-1][head] = num
+    def __call__(self,formula):
+        self.reset(formula)
+        if self.parse_formula():
+            return self.elemdict
         else:
-            stack.append({head:num})
+            return {}
 
-        if debug:
-            print("stack=",stack)
+    def __getitem__(self,key):
+        return self.elemdict[key]
 
-    # Left-delimiter "("
-    elif swL:
-        tail   = formula[formula.find("(")+1:]
-        delim += 1
+    def __iter__(self):
+        return self
 
-        stack.append({})
+    def __next__(self):
+        if self.iterpos>=len(self.sorting_order):
+            raise StopIteration
+        elem = self.sorting_order[self.iterpos]
+        amt = self.elemdict[elem]
+        self.iterpos += 1
+        return (elem, amt)
 
-        if debug:
-            print('left-delimiter tail=', tail)
+    def reset(self,formula=""):
+        self.formula = re.sub("-|=","",formula)
+        self.tail = self.formula
+        self.elemstack = [{}]
+        self.elemdict = {}
+        self.sorting_order = []
+        self.pos = 0
+        self.iterpos = 0
 
-    # Right-delimiter ")"
-    elif swR:
-        s = re.search(rdel,formula).group()
-        tail   = formula[formula.find(s)+len(s):]
-        num    = int(re_rdel.group(1)) if re_rdel.group(1)!="" else 1
-        delim -= 1
+    def parse_formula(self):
+        if self.formula=="":
+            return False
+        while len(self.tail)>0:
+            self.get_mode()
+        if len(self.elemstack)!=1:
+            raise SyntaxError("Un-matched left parenthesis")
+            return False
+        self.elemdict = self.elemstack[0]
+        return True
 
-        if debug:
-            print('right-delimiter, multiply by =', num, "tail=",tail, "delim=", delim)
+    def get_mode(self):
+        atom = self.re_atom.search(self.tail)
+        ldel = self.re_ldel.search(self.tail)
+        rdel = self.re_rdel.search(self.tail)
+        # left delimiter "("
+        if ldel is not None and ldel.start() == 0:
+            # push stack
+            self.push()
+            return
+        # element
+        if atom is not None and atom.start() == 0:
+            # parse element
+            self.parse_element(atom)
+            return
 
-        if delim < 0:
-            raise SyntaxError("un-matched right parenthesis in '%s'"%(formula,))
+        # right delimiter
+        if rdel is not None and rdel.start() == 0:
+            # pop stack
+            self.pop(rdel)
+            return 
+        raise SyntaxError("Wrong element before element {name} at position {pos}".format(name=atom.group(),pos=self.pos))
 
-        for k, v in stack.pop().items():
-            if debug:
-                print("last stack dict, k=",k,"v=",v)
-            if len(stack)>0:
-                if stack[-1].get(k):
-                    stack[-1][k] = stack[-1][k] + v * num
-                else:
-                    stack[-1][k] = v * num
-            else:
-                stack.append({k:v * num})
+    def parse_element(self,atom):
+        elem_name = atom.group(1)
+        elem_amt = 1 if atom.group(3) is "" else int(atom.group(3))
+        self.increase_last(elem_name, elem_amt)
+        self.tail = self.tail[len(atom.group()):]
+        if elem_name not in self.sorting_order:
+            self.sorting_order.append(elem_name)
+        self.pos += 1
+        return (elem_name,elem_amt)
 
-    else:
-        raise SyntaxError("'%s' does not match any regex"%(formula,))
+    def increase_last(self,name,amount):
+        if self.elemstack[-1].get(name) is None:
+            self.elemstack[-1][name] = amount
+        else:
+            self.elemstack[-1][name] += amount
 
-    if len(tail) > 0:
-        if debug:
-            print('recursion, tail=',tail,'stack=',stack,'delim=',delim)
-        stack = atoms(tail, debug, stack, delim)
-        return stack
+    def push(self):
+        self.elemstack.append({})
+        self.tail = self.tail[1:]
+        #self.pos += 1
 
-    else:
-        if delim > 0:
-            raise SyntaxError("un-matched left parenthesis in '%s'"%(formula,))
-        if debug:
-            print("stack[-1]=",stack[-1])
-        return stack
-
-def parse_formula(chem_formula):
-    elemlist = atoms(chem_formula,debug=False)[0]
-    return elemlist
+    def pop(self,rdel):
+        elem_amt = 1 if rdel.group(1) is "" else int(rdel.group(1))
+        if len(self.elemstack)==1:
+            formleft = self.formula[0:self.pos]
+            formright = self.formula[self.pos:]
+            raise SyntaxError("Un-matched right parethesis in {formleft} > {formright}".\
+                format(formleft=formleft,formright=formright))
+        lastdict = self.elemstack.pop()
+        for key, value in lastdict.items():
+            self.increase_last(key,value * elem_amt)
+        self.tail = self.tail[len(rdel.group()):]
+        return elem_amt
+        #self.pos -= 1
 
 if __name__ == '__main__':
-    src = "HO2CCH(NH2)(CH2)4NH2"
-    print("\nsrc=",src,"\nresult=",atoms(formula=src,debug=True))
+    src = "CH3-CH2-H=CN-COOH"
+    print('src =',src)
+    FP = FormulaParser(src)
+    for e, a in FP:
+        print(e,a)
+    #print('elemstck =',FP.elemstack)
+    #print('elemdict =',FP.elemdict)
+    #print('sortordr =',FP.sorting_order)
+    #print('    tail =',FP.tail)
+    #print('     H @ =',FP['H'])
+    #print()
