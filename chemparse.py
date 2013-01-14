@@ -56,14 +56,14 @@ class FormulaParser:
         if self.formula=="":
             return False
         while len(self.tail)>0:
-            self.get_mode()
+            self.select_mode()
         if len(self.elemstack)!=1:
             raise SyntaxError("Un-matched left parenthesis")
             return False
         self.elemdict = self.elemstack[0]
         return True
 
-    def get_mode(self):
+    def select_mode(self):
         atom = self.re_atom.search(self.tail)
         ldel = self.re_ldel.search(self.tail)
         rdel = self.re_rdel.search(self.tail)
@@ -121,7 +121,7 @@ class FormulaParser:
         #self.pos -= 1
 
 if __name__ == '__main__':
-    src = "CH3-CH2-H=CN-COOH"
+    src = "CH3-CH2-CH2-CH3"
     print('src =',src)
     FP = FormulaParser(src)
     for e, a in FP:
