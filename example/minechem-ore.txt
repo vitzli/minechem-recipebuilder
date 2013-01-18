@@ -46,14 +46,14 @@ dustChrome Cr
 dustCinnabar HgS
 dustClay kaolinite
 dustCoal C4
-dustCopper Cu
+dustCopper Cu m=2
 dustDiamond C64
-dustElectrum AgAu
+dustElectrum AgAu m=2
 dustEmerald Be3Al2Si6O18
 dustEnderEye BeK4N5Cl6C4S2
 dustEnderPearl BeK4N5Cl6
-dustGarnetRed (Al2Mg3SiO4)3(Al2Fe3Si3O12)5(Al2Mn3Si3O12)8
-dustGarnetYellow (Ca3Fe2Si3O12)5(Ca3Al2Si3O12)8(Ca3Cr2Si3O12)3
+dustGarnetRed e=500 (Al2Mg3SiO4)3(Al2Fe3Si3O12)5(Al2Mn3Si3O12)8
+dustGarnetYellow e=500 (Ca3Fe2Si3O12)5(Ca3Al2Si3O12)8(Ca3Cr2Si3O12)3
 dustGold Au2
 dustGreenSapphire Al2O6
 dustGrossular Ca3Al2Si3O12
@@ -80,7 +80,7 @@ dustSapphire Al2O6
 dustSpessartine Al2Mn3Si3O12
 dustSteel Fe
 dustSilver Ag
-dustSodalite Al3Si3Na4Cl
+dustSodalite Al3Si3Na4Cl m=2
 dustSulfur S
 dustTin Sn
 dustTitanium Ti2
@@ -92,7 +92,7 @@ dustZinc Zn
 
 fuelCoke C4
 
-ingotInvar Fe2Ni
+ingotInvar Fe2Ni m=2
 ingotMagnesium Mg2
 ingotQuicksilver Hg2
 
@@ -208,10 +208,10 @@ itemDustZinc
 itemIridium
 itemRubber
 
-nuggetCopper Cu
-nuggetIron Fe
-nuggetLead Pb
-nuggetSilver Ag
-nuggetTin Sn
+nuggetCopper Cu p=2/9
+nuggetIron Fe p=2/9
+nuggetLead Pb p=2/9
+nuggetSilver Ag p=2/9
+nuggetTin Sn p=2/9
 
 pulpWood cellulose

@@ -313,8 +313,10 @@ if __name__ == '__main__':
 
         if args.debug:
             print('            //','--'*30,file=mainrecipe)
-            print('            //',recipeName,e,p,file=mainrecipe)
-            print('            //',row,file=mainrecipe)
+            print('            //',COMMENT_FMT.format(name=newRecipe.name, \
+                                        energy=newRecipe.energy,\
+                                        prob=newRecipe.prob, mult=newRecipe.mult), file=mainrecipe)
+            print('            // recipe dictionary is',newRecipe.recipe, file=mainrecipe)
             print(newRecipe,file=mainrecipe)
         else:
             print('            //',COMMENT_FMT.format(name=newRecipe.name, \

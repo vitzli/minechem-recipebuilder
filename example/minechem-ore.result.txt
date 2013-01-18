@@ -1,566 +1,2164 @@
 
-        else if(event.Name.contains("cell_1be")) {
+            // ------------------------------------------------------------
+            // name=cell_1be, energy=100MJ, probability=1.00F, multiply all by 1
+            // recipe dictionary is ['Be2']
+            /**
+                item            : cell_1be
+                energy          : 100MJ
+                prob            : 1.00F
+                recipe          : ['Be2']
+                molDict         : {}
+                elemDict        : {'Be': 2}
+                mol_lst         : []
+                elem_lst        : ['new Element(Be, 2)']
+                java elem code  : new Element(Be, 2)
+            **/
+
+        else if(event.Name.contentEquals("cell_1be")) {
             DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(Be, 2) ));
-            // no special synthesis rule
+            SynthesisRecipe.add(new SynthesisRecipe(event.Ore, false, 100, new Element(Be, 2) ));
 
         }
 
-        else if(event.Name.contains("cell_1c")) {
+            // ------------------------------------------------------------
+
+            // ------------------------------------------------------------
+            // name=cell_1c, energy=100MJ, probability=1.00F, multiply all by 1
+            // recipe dictionary is ['C4']
+            /**
+                item            : cell_1c
+                energy          : 100MJ
+                prob            : 1.00F
+                recipe          : ['C4']
+                molDict         : {}
+                elemDict        : {'C': 4}
+                mol_lst         : []
+                elem_lst        : ['new Element(C, 4)']
+                java elem code  : new Element(C, 4)
+            **/
+
+        else if(event.Name.contentEquals("cell_1c")) {
             DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(C, 4) ));
-            // no special synthesis rule
+            SynthesisRecipe.add(new SynthesisRecipe(event.Ore, false, 100, new Element(C, 4) ));
 
         }
 
-        else if(event.Name.contains("cell_1c_4h")) {
+            // ------------------------------------------------------------
+
+            // ------------------------------------------------------------
+            // name=cell_1c_4h, energy=100MJ, probability=1.00F, multiply all by 1
+            // recipe dictionary is ['CH4']
+            /**
+                item            : cell_1c_4h
+                energy          : 100MJ
+                prob            : 1.00F
+                recipe          : ['CH4']
+                molDict         : {}
+                elemDict        : {'H': 4, 'C': 1}
+                mol_lst         : []
+                elem_lst        : ['new Element(C, 1)', 'new Element(H, 4)']
+                java elem code  : new Element(C, 1), new Element(H, 4)
+            **/
+
+        else if(event.Name.contentEquals("cell_1c_4h")) {
             DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(C, 1), new Element(H, 4) ));
-            // no special synthesis rule
+            SynthesisRecipe.add(new SynthesisRecipe(event.Ore, false, 100, new Element(C, 1), new Element(H, 4) ));
 
         }
 
-        else if(event.Name.contains("cell_1ca")) {
+            // ------------------------------------------------------------
+
+            // ------------------------------------------------------------
+            // name=cell_1ca, energy=100MJ, probability=1.00F, multiply all by 1
+            // recipe dictionary is ['Ca2']
+            /**
+                item            : cell_1ca
+                energy          : 100MJ
+                prob            : 1.00F
+                recipe          : ['Ca2']
+                molDict         : {}
+                elemDict        : {'Ca': 2}
+                mol_lst         : []
+                elem_lst        : ['new Element(Ca, 2)']
+                java elem code  : new Element(Ca, 2)
+            **/
+
+        else if(event.Name.contentEquals("cell_1ca")) {
             DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(Ca, 2) ));
-            // no special synthesis rule
+            SynthesisRecipe.add(new SynthesisRecipe(event.Ore, false, 100, new Element(Ca, 2) ));
 
         }
 
-        else if(event.Name.contains("cell_1ca_1c_3o")) {
+            // ------------------------------------------------------------
+
+            // ------------------------------------------------------------
+            // name=cell_1ca_1c_3o, energy=100MJ, probability=1.00F, multiply all by 1
+            // recipe dictionary is ['calcite', '2']
+            /**
+                item            : cell_1ca_1c_3o
+                energy          : 100MJ
+                prob            : 1.00F
+                recipe          : ['calcite', '2']
+                molDict         : {'calcite': 2}
+                elemDict        : {}
+                mol_lst         : ['new Molecule(calcite, 2)']
+                elem_lst        : []
+                java elem code  : new Molecule(calcite, 2)
+            **/
+
+        else if(event.Name.contentEquals("cell_1ca_1c_3o")) {
             DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Molecule(calcite, 2) ));
-            // no special synthesis rule
+            SynthesisRecipe.add(new SynthesisRecipe(event.Ore, false, 100, new Molecule(calcite, 2) ));
 
         }
 
-        else if(event.Name.contains("cell_1cl")) {
+            // ------------------------------------------------------------
+
+            // ------------------------------------------------------------
+            // name=cell_1cl, energy=100MJ, probability=1.00F, multiply all by 1
+            // recipe dictionary is ['Cl2']
+            /**
+                item            : cell_1cl
+                energy          : 100MJ
+                prob            : 1.00F
+                recipe          : ['Cl2']
+                molDict         : {}
+                elemDict        : {'Cl': 2}
+                mol_lst         : []
+                elem_lst        : ['new Element(Cl, 2)']
+                java elem code  : new Element(Cl, 2)
+            **/
+
+        else if(event.Name.contentEquals("cell_1cl")) {
             DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(Cl, 2) ));
-            // no special synthesis rule
+            SynthesisRecipe.add(new SynthesisRecipe(event.Ore, false, 100, new Element(Cl, 2) ));
 
         }
 
-        else if(event.Name.contains("cell_1h")) {
+            // ------------------------------------------------------------
+
+            // ------------------------------------------------------------
+            // name=cell_1h, energy=100MJ, probability=1.00F, multiply all by 1
+            // recipe dictionary is ['H2']
+            /**
+                item            : cell_1h
+                energy          : 100MJ
+                prob            : 1.00F
+                recipe          : ['H2']
+                molDict         : {}
+                elemDict        : {'H': 2}
+                mol_lst         : []
+                elem_lst        : ['new Element(H, 2)']
+                java elem code  : new Element(H, 2)
+            **/
+
+        else if(event.Name.contentEquals("cell_1h")) {
             DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(H, 2) ));
-            // no special synthesis rule
+            SynthesisRecipe.add(new SynthesisRecipe(event.Ore, false, 100, new Element(H, 2) ));
 
         }
 
-        else if(event.Name.contains("cell_1h2")) {
+            // ------------------------------------------------------------
+
+            // ------------------------------------------------------------
+            // name=cell_1h2, energy=100MJ, probability=1.00F, multiply all by 1
+            // recipe dictionary is ['H4']
+            /**
+                item            : cell_1h2
+                energy          : 100MJ
+                prob            : 1.00F
+                recipe          : ['H4']
+                molDict         : {}
+                elemDict        : {'H': 4}
+                mol_lst         : []
+                elem_lst        : ['new Element(H, 4)']
+                java elem code  : new Element(H, 4)
+            **/
+
+        else if(event.Name.contentEquals("cell_1h2")) {
             DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(H, 4) ));
-            // no special synthesis rule
+            SynthesisRecipe.add(new SynthesisRecipe(event.Ore, false, 100, new Element(H, 4) ));
 
         }
 
-        else if(event.Name.contains("cell_1h3")) {
+            // ------------------------------------------------------------
+
+            // ------------------------------------------------------------
+            // name=cell_1h3, energy=100MJ, probability=1.00F, multiply all by 1
+            // recipe dictionary is ['H6']
+            /**
+                item            : cell_1h3
+                energy          : 100MJ
+                prob            : 1.00F
+                recipe          : ['H6']
+                molDict         : {}
+                elemDict        : {'H': 6}
+                mol_lst         : []
+                elem_lst        : ['new Element(H, 6)']
+                java elem code  : new Element(H, 6)
+            **/
+
+        else if(event.Name.contentEquals("cell_1h3")) {
             DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(H, 6) ));
-            // no special synthesis rule
+            SynthesisRecipe.add(new SynthesisRecipe(event.Ore, false, 100, new Element(H, 6) ));
 
         }
 
-        else if(event.Name.contains("cell_1he")) {
+            // ------------------------------------------------------------
+
+            // ------------------------------------------------------------
+            // name=cell_1he, energy=100MJ, probability=1.00F, multiply all by 1
+            // recipe dictionary is ['He2']
+            /**
+                item            : cell_1he
+                energy          : 100MJ
+                prob            : 1.00F
+                recipe          : ['He2']
+                molDict         : {}
+                elemDict        : {'He': 2}
+                mol_lst         : []
+                elem_lst        : ['new Element(He, 2)']
+                java elem code  : new Element(He, 2)
+            **/
+
+        else if(event.Name.contentEquals("cell_1he")) {
             DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(He, 2) ));
-            // no special synthesis rule
+            SynthesisRecipe.add(new SynthesisRecipe(event.Ore, false, 100, new Element(He, 2) ));
 
         }
 
-        else if(event.Name.contains("cell_1he3")) {
+            // ------------------------------------------------------------
+
+            // ------------------------------------------------------------
+            // name=cell_1he3, energy=100MJ, probability=1.00F, multiply all by 1
+            // recipe dictionary is ['He4']
+            /**
+                item            : cell_1he3
+                energy          : 100MJ
+                prob            : 1.00F
+                recipe          : ['He4']
+                molDict         : {}
+                elemDict        : {'He': 4}
+                mol_lst         : []
+                elem_lst        : ['new Element(He, 4)']
+                java elem code  : new Element(He, 4)
+            **/
+
+        else if(event.Name.contentEquals("cell_1he3")) {
             DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(He, 4) ));
-            // no special synthesis rule
+            SynthesisRecipe.add(new SynthesisRecipe(event.Ore, false, 100, new Element(He, 4) ));
 
         }
 
-        else if(event.Name.contains("cell_1hg")) {
+            // ------------------------------------------------------------
+
+            // ------------------------------------------------------------
+            // name=cell_1hg, energy=100MJ, probability=1.00F, multiply all by 1
+            // recipe dictionary is ['Hg2']
+            /**
+                item            : cell_1hg
+                energy          : 100MJ
+                prob            : 1.00F
+                recipe          : ['Hg2']
+                molDict         : {}
+                elemDict        : {'Hg': 2}
+                mol_lst         : []
+                elem_lst        : ['new Element(Hg, 2)']
+                java elem code  : new Element(Hg, 2)
+            **/
+
+        else if(event.Name.contentEquals("cell_1hg")) {
             DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(Hg, 2) ));
-            // no special synthesis rule
+            SynthesisRecipe.add(new SynthesisRecipe(event.Ore, false, 100, new Element(Hg, 2) ));
 
         }
 
-        else if(event.Name.contains("cell_1k")) {
+            // ------------------------------------------------------------
+
+            // ------------------------------------------------------------
+            // name=cell_1k, energy=100MJ, probability=1.00F, multiply all by 1
+            // recipe dictionary is ['K2']
+            /**
+                item            : cell_1k
+                energy          : 100MJ
+                prob            : 1.00F
+                recipe          : ['K2']
+                molDict         : {}
+                elemDict        : {'K': 2}
+                mol_lst         : []
+                elem_lst        : ['new Element(K, 2)']
+                java elem code  : new Element(K, 2)
+            **/
+
+        else if(event.Name.contentEquals("cell_1k")) {
             DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(K, 2) ));
-            // no special synthesis rule
+            SynthesisRecipe.add(new SynthesisRecipe(event.Ore, false, 100, new Element(K, 2) ));
 
         }
 
-        else if(event.Name.contains("cell_1li")) {
+            // ------------------------------------------------------------
+
+            // ------------------------------------------------------------
+            // name=cell_1li, energy=100MJ, probability=1.00F, multiply all by 1
+            // recipe dictionary is ['Li']
+            /**
+                item            : cell_1li
+                energy          : 100MJ
+                prob            : 1.00F
+                recipe          : ['Li']
+                molDict         : {}
+                elemDict        : {'Li': 1}
+                mol_lst         : []
+                elem_lst        : ['new Element(Li, 1)']
+                java elem code  : new Element(Li, 1)
+            **/
+
+        else if(event.Name.contentEquals("cell_1li")) {
             DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(Li, 1) ));
-            // no special synthesis rule
+            SynthesisRecipe.add(new SynthesisRecipe(event.Ore, false, 100, new Element(Li, 1) ));
 
         }
 
-        else if(event.Name.contains("cell_1si")) {
+            // ------------------------------------------------------------
+
+            // ------------------------------------------------------------
+            // name=cell_1si, energy=100MJ, probability=1.00F, multiply all by 1
+            // recipe dictionary is ['Si2']
+            /**
+                item            : cell_1si
+                energy          : 100MJ
+                prob            : 1.00F
+                recipe          : ['Si2']
+                molDict         : {}
+                elemDict        : {'Si': 2}
+                mol_lst         : []
+                elem_lst        : ['new Element(Si, 2)']
+                java elem code  : new Element(Si, 2)
+            **/
+
+        else if(event.Name.contentEquals("cell_1si")) {
             DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(Si, 2) ));
-            // no special synthesis rule
+            SynthesisRecipe.add(new SynthesisRecipe(event.Ore, false, 100, new Element(Si, 2) ));
 
         }
 
-        else if(event.Name.contains("cell_1w")) {
+            // ------------------------------------------------------------
+
+            // ------------------------------------------------------------
+            // name=cell_1w, energy=100MJ, probability=1.00F, multiply all by 1
+            // recipe dictionary is ['W2']
+            /**
+                item            : cell_1w
+                energy          : 100MJ
+                prob            : 1.00F
+                recipe          : ['W2']
+                molDict         : {}
+                elemDict        : {'W': 2}
+                mol_lst         : []
+                elem_lst        : ['new Element(W, 2)']
+                java elem code  : new Element(W, 2)
+            **/
+
+        else if(event.Name.contentEquals("cell_1w")) {
             DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(W, 2) ));
-            // no special synthesis rule
+            SynthesisRecipe.add(new SynthesisRecipe(event.Ore, false, 100, new Element(W, 2) ));
 
         }
 
-        else if(event.Name.contains("cell_2na_2s_8o")) {
+            // ------------------------------------------------------------
+
+            // ------------------------------------------------------------
+            // name=cell_2na_2s_8o, energy=100MJ, probability=1.00F, multiply all by 1
+            // recipe dictionary is ['(NaSO4)2']
+            /**
+                item            : cell_2na_2s_8o
+                energy          : 100MJ
+                prob            : 1.00F
+                recipe          : ['(NaSO4)2']
+                molDict         : {}
+                elemDict        : {'Na': 2, 'S': 2, 'O': 8}
+                mol_lst         : []
+                elem_lst        : ['new Element(Na, 2)', 'new Element(S, 2)', 'new Element(O, 8)']
+                java elem code  : new Element(Na, 2), new Element(S, 2), new Element(O, 8)
+            **/
+
+        else if(event.Name.contentEquals("cell_2na_2s_8o")) {
             DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(Na, 2), new Element(S, 2), new Element(O, 8) ));
-            // no special synthesis rule
+            SynthesisRecipe.add(new SynthesisRecipe(event.Ore, false, 100, new Element(Na, 2), new Element(S, 2), new Element(O, 8) ));
 
         }
 
-        else if(event.Name.contains("cell_2o")) {
+            // ------------------------------------------------------------
+
+            // ------------------------------------------------------------
+            // name=cell_2o, energy=100MJ, probability=1.00F, multiply all by 1
+            // recipe dictionary is ['O4']
+            /**
+                item            : cell_2o
+                energy          : 100MJ
+                prob            : 1.00F
+                recipe          : ['O4']
+                molDict         : {}
+                elemDict        : {'O': 4}
+                mol_lst         : []
+                elem_lst        : ['new Element(O, 4)']
+                java elem code  : new Element(O, 4)
+            **/
+
+        else if(event.Name.contentEquals("cell_2o")) {
             DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(O, 4) ));
-            // no special synthesis rule
+            SynthesisRecipe.add(new SynthesisRecipe(event.Ore, false, 100, new Element(O, 4) ));
 
         }
 
-        else if(event.Name.contains("cell_3c_5h_3n_9o")) {
+            // ------------------------------------------------------------
+
+            // ------------------------------------------------------------
+            // name=cell_3c_5h_3n_9o, energy=100MJ, probability=1.00F, multiply all by 1
+            // recipe dictionary is ['C3H5N3O9']
+            /**
+                item            : cell_3c_5h_3n_9o
+                energy          : 100MJ
+                prob            : 1.00F
+                recipe          : ['C3H5N3O9']
+                molDict         : {}
+                elemDict        : {'H': 5, 'C': 3, 'O': 9, 'N': 3}
+                mol_lst         : []
+                elem_lst        : ['new Element(C, 3)', 'new Element(H, 5)', 'new Element(N, 3)', 'new Element(O, 9)']
+                java elem code  : new Element(C, 3), new Element(H, 5), new Element(N, 3), new Element(O, 9)
+            **/
+
+        else if(event.Name.contentEquals("cell_3c_5h_3n_9o")) {
             DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(C, 3), new Element(H, 5), new Element(N, 3), new Element(O, 9) ));
-            // no special synthesis rule
+            SynthesisRecipe.add(new SynthesisRecipe(event.Ore, false, 100, new Element(C, 3), new Element(H, 5), new Element(N, 3), new Element(O, 9) ));
 
         }
 
-        else if(event.Name.contains("crystallineCopper")) {
+            // ------------------------------------------------------------
+
+            // ------------------------------------------------------------
+            // name=crystallineCopper, energy=100MJ, probability=1.00F, multiply all by 1
+            // recipe dictionary is ['Cu2']
+            /**
+                item            : crystallineCopper
+                energy          : 100MJ
+                prob            : 1.00F
+                recipe          : ['Cu2']
+                molDict         : {}
+                elemDict        : {'Cu': 2}
+                mol_lst         : []
+                elem_lst        : ['new Element(Cu, 2)']
+                java elem code  : new Element(Cu, 2)
+            **/
+
+        else if(event.Name.contentEquals("crystallineCopper")) {
             DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(Cu, 2) ));
-            // no special synthesis rule
+            SynthesisRecipe.add(new SynthesisRecipe(event.Ore, false, 100, new Element(Cu, 2) ));
 
         }
 
-        else if(event.Name.contains("crystallineGalena")) {
+            // ------------------------------------------------------------
+
+            // ------------------------------------------------------------
+            // name=crystallineGalena, energy=100MJ, probability=1.00F, multiply all by 1
+            // recipe dictionary is ['PbS']
+            /**
+                item            : crystallineGalena
+                energy          : 100MJ
+                prob            : 1.00F
+                recipe          : ['PbS']
+                molDict         : {}
+                elemDict        : {'Pb': 1, 'S': 1}
+                mol_lst         : []
+                elem_lst        : ['new Element(Pb, 1)', 'new Element(S, 1)']
+                java elem code  : new Element(Pb, 1), new Element(S, 1)
+            **/
+
+        else if(event.Name.contentEquals("crystallineGalena")) {
             DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(Pb, 1), new Element(S, 1) ));
-            // no special synthesis rule
+            SynthesisRecipe.add(new SynthesisRecipe(event.Ore, false, 100, new Element(Pb, 1), new Element(S, 1) ));
 
         }
 
-        else if(event.Name.contains("crystallineGold")) {
+            // ------------------------------------------------------------
+
+            // ------------------------------------------------------------
+            // name=crystallineGold, energy=100MJ, probability=1.00F, multiply all by 1
+            // recipe dictionary is ['Au2']
+            /**
+                item            : crystallineGold
+                energy          : 100MJ
+                prob            : 1.00F
+                recipe          : ['Au2']
+                molDict         : {}
+                elemDict        : {'Au': 2}
+                mol_lst         : []
+                elem_lst        : ['new Element(Au, 2)']
+                java elem code  : new Element(Au, 2)
+            **/
+
+        else if(event.Name.contentEquals("crystallineGold")) {
             DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(Au, 2) ));
-            // no special synthesis rule
+            SynthesisRecipe.add(new SynthesisRecipe(event.Ore, false, 100, new Element(Au, 2) ));
 
         }
 
-        else if(event.Name.contains("crystallineIron")) {
+            // ------------------------------------------------------------
+
+            // ------------------------------------------------------------
+            // name=crystallineIron, energy=100MJ, probability=1.00F, multiply all by 1
+            // recipe dictionary is ['Fe2']
+            /**
+                item            : crystallineIron
+                energy          : 100MJ
+                prob            : 1.00F
+                recipe          : ['Fe2']
+                molDict         : {}
+                elemDict        : {'Fe': 2}
+                mol_lst         : []
+                elem_lst        : ['new Element(Fe, 2)']
+                java elem code  : new Element(Fe, 2)
+            **/
+
+        else if(event.Name.contentEquals("crystallineIron")) {
             DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(Fe, 2) ));
-            // no special synthesis rule
+            SynthesisRecipe.add(new SynthesisRecipe(event.Ore, false, 100, new Element(Fe, 2) ));
 
         }
 
-        else if(event.Name.contains("crystallineLead")) {
+            // ------------------------------------------------------------
+
+            // ------------------------------------------------------------
+            // name=crystallineLead, energy=100MJ, probability=1.00F, multiply all by 1
+            // recipe dictionary is ['Pb2']
+            /**
+                item            : crystallineLead
+                energy          : 100MJ
+                prob            : 1.00F
+                recipe          : ['Pb2']
+                molDict         : {}
+                elemDict        : {'Pb': 2}
+                mol_lst         : []
+                elem_lst        : ['new Element(Pb, 2)']
+                java elem code  : new Element(Pb, 2)
+            **/
+
+        else if(event.Name.contentEquals("crystallineLead")) {
             DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(Pb, 2) ));
-            // no special synthesis rule
+            SynthesisRecipe.add(new SynthesisRecipe(event.Ore, false, 100, new Element(Pb, 2) ));
 
         }
 
-        else if(event.Name.contains("crystallineSilver")) {
+            // ------------------------------------------------------------
+
+            // ------------------------------------------------------------
+            // name=crystallineSilver, energy=100MJ, probability=1.00F, multiply all by 1
+            // recipe dictionary is ['Ag2']
+            /**
+                item            : crystallineSilver
+                energy          : 100MJ
+                prob            : 1.00F
+                recipe          : ['Ag2']
+                molDict         : {}
+                elemDict        : {'Ag': 2}
+                mol_lst         : []
+                elem_lst        : ['new Element(Ag, 2)']
+                java elem code  : new Element(Ag, 2)
+            **/
+
+        else if(event.Name.contentEquals("crystallineSilver")) {
             DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(Ag, 2) ));
-            // no special synthesis rule
+            SynthesisRecipe.add(new SynthesisRecipe(event.Ore, false, 100, new Element(Ag, 2) ));
 
         }
 
-        else if(event.Name.contains("crystallineTin")) {
+            // ------------------------------------------------------------
+
+            // ------------------------------------------------------------
+            // name=crystallineTin, energy=100MJ, probability=1.00F, multiply all by 1
+            // recipe dictionary is ['Sn2']
+            /**
+                item            : crystallineTin
+                energy          : 100MJ
+                prob            : 1.00F
+                recipe          : ['Sn2']
+                molDict         : {}
+                elemDict        : {'Sn': 2}
+                mol_lst         : []
+                elem_lst        : ['new Element(Sn, 2)']
+                java elem code  : new Element(Sn, 2)
+            **/
+
+        else if(event.Name.contentEquals("crystallineTin")) {
             DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(Sn, 2) ));
-            // no special synthesis rule
+            SynthesisRecipe.add(new SynthesisRecipe(event.Ore, false, 100, new Element(Sn, 2) ));
 
         }
 
-        else if(event.Name.contains("dropHoneydew")) {
+            // ------------------------------------------------------------
+
+            // ------------------------------------------------------------
+            // name=dropHoneydew, energy=100MJ, probability=1.00F, multiply all by 1
+            // recipe dictionary is ['sucrose']
+            /**
+                item            : dropHoneydew
+                energy          : 100MJ
+                prob            : 1.00F
+                recipe          : ['sucrose']
+                molDict         : {'sucrose': 1}
+                elemDict        : {}
+                mol_lst         : ['new Molecule(sucrose, 1)']
+                elem_lst        : []
+                java elem code  : new Molecule(sucrose, 1)
+            **/
+
+        else if(event.Name.contentEquals("dropHoneydew")) {
             DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Molecule(sucrose, 1) ));
-            // no special synthesis rule
+            SynthesisRecipe.add(new SynthesisRecipe(event.Ore, false, 100, new Molecule(sucrose, 1) ));
 
         }
 
-        else if(event.Name.contains("dropRoyalJelly")) {
+            // ------------------------------------------------------------
+
+            // ------------------------------------------------------------
+            // name=dropRoyalJelly, energy=100MJ, probability=1.00F, multiply all by 1
+            // recipe dictionary is ['sucrose', '2']
+            /**
+                item            : dropRoyalJelly
+                energy          : 100MJ
+                prob            : 1.00F
+                recipe          : ['sucrose', '2']
+                molDict         : {'sucrose': 2}
+                elemDict        : {}
+                mol_lst         : ['new Molecule(sucrose, 2)']
+                elem_lst        : []
+                java elem code  : new Molecule(sucrose, 2)
+            **/
+
+        else if(event.Name.contentEquals("dropRoyalJelly")) {
             DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Molecule(sucrose, 2) ));
-            // no special synthesis rule
+            SynthesisRecipe.add(new SynthesisRecipe(event.Ore, false, 100, new Molecule(sucrose, 2) ));
 
         }
 
-        else if(event.Name.contains("dropUranium")) {
+            // ------------------------------------------------------------
+
+            // ------------------------------------------------------------
+            // name=dropUranium, energy=100MJ, probability=1.00F, multiply all by 1
+            // recipe dictionary is ['UO4']
+            /**
+                item            : dropUranium
+                energy          : 100MJ
+                prob            : 1.00F
+                recipe          : ['UO4']
+                molDict         : {}
+                elemDict        : {'U': 1, 'O': 4}
+                mol_lst         : []
+                elem_lst        : ['new Element(U, 1)', 'new Element(O, 4)']
+                java elem code  : new Element(U, 1), new Element(O, 4)
+            **/
+
+        else if(event.Name.contentEquals("dropUranium")) {
             DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(U, 1), new Element(O, 4) ));
-            // no special synthesis rule
+            SynthesisRecipe.add(new SynthesisRecipe(event.Ore, false, 100, new Element(U, 1), new Element(O, 4) ));
 
         }
 
-        else if(event.Name.contains("dustAlmandine")) {
+            // ------------------------------------------------------------
+
+            // ------------------------------------------------------------
+            // name=dustAlmandine, energy=100MJ, probability=1.00F, multiply all by 1
+            // recipe dictionary is ['Al2Fe3Si3O12']
+            /**
+                item            : dustAlmandine
+                energy          : 100MJ
+                prob            : 1.00F
+                recipe          : ['Al2Fe3Si3O12']
+                molDict         : {}
+                elemDict        : {'Si': 3, 'Al': 2, 'O': 12, 'Fe': 3}
+                mol_lst         : []
+                elem_lst        : ['new Element(Al, 2)', 'new Element(Fe, 3)', 'new Element(Si, 3)', 'new Element(O, 12)']
+                java elem code  : new Element(Al, 2), new Element(Fe, 3), new Element(Si, 3), new Element(O, 12)
+            **/
+
+        else if(event.Name.contentEquals("dustAlmandine")) {
             DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(Al, 2), new Element(Fe, 3), new Element(Si, 3), new Element(O, 12) ));
-            // no special synthesis rule
+            SynthesisRecipe.add(new SynthesisRecipe(event.Ore, false, 100, new Element(Al, 2), new Element(Fe, 3), new Element(Si, 3), new Element(O, 12) ));
 
         }
 
-        else if(event.Name.contains("dustAluminium")) {
+            // ------------------------------------------------------------
+
+            // ------------------------------------------------------------
+            // name=dustAluminium, energy=100MJ, probability=1.00F, multiply all by 1
+            // recipe dictionary is ['Al2']
+            /**
+                item            : dustAluminium
+                energy          : 100MJ
+                prob            : 1.00F
+                recipe          : ['Al2']
+                molDict         : {}
+                elemDict        : {'Al': 2}
+                mol_lst         : []
+                elem_lst        : ['new Element(Al, 2)']
+                java elem code  : new Element(Al, 2)
+            **/
+
+        else if(event.Name.contentEquals("dustAluminium")) {
             DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(Al, 2) ));
-            // no special synthesis rule
+            SynthesisRecipe.add(new SynthesisRecipe(event.Ore, false, 100, new Element(Al, 2) ));
 
         }
 
-        else if(event.Name.contains("dustAndradite")) {
+            // ------------------------------------------------------------
+
+            // ------------------------------------------------------------
+            // name=dustAndradite, energy=100MJ, probability=1.00F, multiply all by 1
+            // recipe dictionary is ['Ca3Fe2Si3O12']
+            /**
+                item            : dustAndradite
+                energy          : 100MJ
+                prob            : 1.00F
+                recipe          : ['Ca3Fe2Si3O12']
+                molDict         : {}
+                elemDict        : {'Ca': 3, 'Si': 3, 'Fe': 2, 'O': 12}
+                mol_lst         : []
+                elem_lst        : ['new Element(Ca, 3)', 'new Element(Fe, 2)', 'new Element(Si, 3)', 'new Element(O, 12)']
+                java elem code  : new Element(Ca, 3), new Element(Fe, 2), new Element(Si, 3), new Element(O, 12)
+            **/
+
+        else if(event.Name.contentEquals("dustAndradite")) {
             DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(Ca, 3), new Element(Fe, 2), new Element(Si, 3), new Element(O, 12) ));
-            // no special synthesis rule
+            SynthesisRecipe.add(new SynthesisRecipe(event.Ore, false, 100, new Element(Ca, 3), new Element(Fe, 2), new Element(Si, 3), new Element(O, 12) ));
 
         }
 
-        else if(event.Name.contains("dustAsh")) {
+            // ------------------------------------------------------------
+
+            // ------------------------------------------------------------
+            // name=dustAsh, energy=100MJ, probability=1.00F, multiply all by 1
+            // recipe dictionary is ['C']
+            /**
+                item            : dustAsh
+                energy          : 100MJ
+                prob            : 1.00F
+                recipe          : ['C']
+                molDict         : {}
+                elemDict        : {'C': 1}
+                mol_lst         : []
+                elem_lst        : ['new Element(C, 1)']
+                java elem code  : new Element(C, 1)
+            **/
+
+        else if(event.Name.contentEquals("dustAsh")) {
             DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(C, 1) ));
-            // no special synthesis rule
+            SynthesisRecipe.add(new SynthesisRecipe(event.Ore, false, 100, new Element(C, 1) ));
 
         }
 
-        else if(event.Name.contains("dustBasalt")) {
+            // ------------------------------------------------------------
+
+            // ------------------------------------------------------------
+            // name=dustBasalt, energy=100MJ, probability=1.00F, multiply all by 1
+            // recipe dictionary is ['calcite', '3', 'siliconDioxide', '8', 'Mg2Fe2SiO4C4']
+            /**
+                item            : dustBasalt
+                energy          : 100MJ
+                prob            : 1.00F
+                recipe          : ['calcite', '3', 'siliconDioxide', '8', 'Mg2Fe2SiO4C4']
+                molDict         : {'calcite': 3, 'siliconDioxide': 8}
+                elemDict        : {'C': 4, 'Mg': 2, 'Si': 1, 'Fe': 2, 'O': 4}
+                mol_lst         : ['new Molecule(calcite, 3)', 'new Molecule(siliconDioxide, 8)']
+                elem_lst        : ['new Element(Mg, 2)', 'new Element(Fe, 2)', 'new Element(Si, 1)', 'new Element(O, 4)', 'new Element(C, 4)']
+                java elem code  : new Molecule(calcite, 3), new Molecule(siliconDioxide, 8), new Element(Mg, 2), new Element(Fe, 2), new Element(Si, 1), new Element(O, 4), new Element(C, 4)
+            **/
+
+        else if(event.Name.contentEquals("dustBasalt")) {
             DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Molecule(calcite, 3), new Molecule(siliconDioxide, 8), new Element(Mg, 2), new Element(Fe, 2), new Element(Si, 1), new Element(O, 4), new Element(C, 4) ));
-            // no special synthesis rule
+            SynthesisRecipe.add(new SynthesisRecipe(event.Ore, false, 100, new Molecule(calcite, 3), new Molecule(siliconDioxide, 8), new Element(Mg, 2), new Element(Fe, 2), new Element(Si, 1), new Element(O, 4), new Element(C, 4) ));
 
         }
 
-        else if(event.Name.contains("dustBauxite")) {
+            // ------------------------------------------------------------
+
+            // ------------------------------------------------------------
+            // name=dustBauxite, energy=100MJ, probability=1.00F, multiply all by 1
+            // recipe dictionary is ['TiAl16H10O12']
+            /**
+                item            : dustBauxite
+                energy          : 100MJ
+                prob            : 1.00F
+                recipe          : ['TiAl16H10O12']
+                molDict         : {}
+                elemDict        : {'H': 10, 'Al': 16, 'O': 12, 'Ti': 1}
+                mol_lst         : []
+                elem_lst        : ['new Element(Ti, 1)', 'new Element(Al, 16)', 'new Element(H, 10)', 'new Element(O, 12)']
+                java elem code  : new Element(Ti, 1), new Element(Al, 16), new Element(H, 10), new Element(O, 12)
+            **/
+
+        else if(event.Name.contentEquals("dustBauxite")) {
             DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(Ti, 1), new Element(Al, 16), new Element(H, 10), new Element(O, 12) ));
-            // no special synthesis rule
+            SynthesisRecipe.add(new SynthesisRecipe(event.Ore, false, 100, new Element(Ti, 1), new Element(Al, 16), new Element(H, 10), new Element(O, 12) ));
 
         }
 
-        else if(event.Name.contains("dustBrass")) {
+            // ------------------------------------------------------------
+
+            // ------------------------------------------------------------
+            // name=dustBrass, energy=100MJ, probability=1.00F, multiply all by 1
+            // recipe dictionary is ['ZnCu3']
+            /**
+                item            : dustBrass
+                energy          : 100MJ
+                prob            : 1.00F
+                recipe          : ['ZnCu3']
+                molDict         : {}
+                elemDict        : {'Zn': 1, 'Cu': 3}
+                mol_lst         : []
+                elem_lst        : ['new Element(Zn, 1)', 'new Element(Cu, 3)']
+                java elem code  : new Element(Zn, 1), new Element(Cu, 3)
+            **/
+
+        else if(event.Name.contentEquals("dustBrass")) {
             DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(Zn, 1), new Element(Cu, 3) ));
-            // no special synthesis rule
+            SynthesisRecipe.add(new SynthesisRecipe(event.Ore, false, 100, new Element(Zn, 1), new Element(Cu, 3) ));
 
         }
 
-        else if(event.Name.contains("dustBronze")) {
+            // ------------------------------------------------------------
+
+            // ------------------------------------------------------------
+            // name=dustBronze, energy=100MJ, probability=1.00F, multiply all by 1
+            // recipe dictionary is ['Cu3Sn']
+            /**
+                item            : dustBronze
+                energy          : 100MJ
+                prob            : 1.00F
+                recipe          : ['Cu3Sn']
+                molDict         : {}
+                elemDict        : {'Sn': 1, 'Cu': 3}
+                mol_lst         : []
+                elem_lst        : ['new Element(Cu, 3)', 'new Element(Sn, 1)']
+                java elem code  : new Element(Cu, 3), new Element(Sn, 1)
+            **/
+
+        else if(event.Name.contentEquals("dustBronze")) {
             DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(Cu, 3), new Element(Sn, 1) ));
-            // no special synthesis rule
+            SynthesisRecipe.add(new SynthesisRecipe(event.Ore, false, 100, new Element(Cu, 3), new Element(Sn, 1) ));
 
         }
 
-        else if(event.Name.contains("dustCalcite")) {
+            // ------------------------------------------------------------
+
+            // ------------------------------------------------------------
+            // name=dustCalcite, energy=100MJ, probability=1.00F, multiply all by 1
+            // recipe dictionary is ['calcite']
+            /**
+                item            : dustCalcite
+                energy          : 100MJ
+                prob            : 1.00F
+                recipe          : ['calcite']
+                molDict         : {'calcite': 1}
+                elemDict        : {}
+                mol_lst         : ['new Molecule(calcite, 1)']
+                elem_lst        : []
+                java elem code  : new Molecule(calcite, 1)
+            **/
+
+        else if(event.Name.contentEquals("dustCalcite")) {
             DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Molecule(calcite, 1) ));
-            // no special synthesis rule
+            SynthesisRecipe.add(new SynthesisRecipe(event.Ore, false, 100, new Molecule(calcite, 1) ));
 
         }
 
-        else if(event.Name.contains("dustCharcoal")) {
+            // ------------------------------------------------------------
+
+            // ------------------------------------------------------------
+            // name=dustCharcoal, energy=100MJ, probability=1.00F, multiply all by 1
+            // recipe dictionary is ['C4']
+            /**
+                item            : dustCharcoal
+                energy          : 100MJ
+                prob            : 1.00F
+                recipe          : ['C4']
+                molDict         : {}
+                elemDict        : {'C': 4}
+                mol_lst         : []
+                elem_lst        : ['new Element(C, 4)']
+                java elem code  : new Element(C, 4)
+            **/
+
+        else if(event.Name.contentEquals("dustCharcoal")) {
             DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(C, 4) ));
-            // no special synthesis rule
+            SynthesisRecipe.add(new SynthesisRecipe(event.Ore, false, 100, new Element(C, 4) ));
 
         }
 
-        else if(event.Name.contains("dustChrome")) {
+            // ------------------------------------------------------------
+
+            // ------------------------------------------------------------
+            // name=dustChrome, energy=100MJ, probability=1.00F, multiply all by 1
+            // recipe dictionary is ['Cr']
+            /**
+                item            : dustChrome
+                energy          : 100MJ
+                prob            : 1.00F
+                recipe          : ['Cr']
+                molDict         : {}
+                elemDict        : {'Cr': 1}
+                mol_lst         : []
+                elem_lst        : ['new Element(Cr, 1)']
+                java elem code  : new Element(Cr, 1)
+            **/
+
+        else if(event.Name.contentEquals("dustChrome")) {
             DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(Cr, 1) ));
-            // no special synthesis rule
+            SynthesisRecipe.add(new SynthesisRecipe(event.Ore, false, 100, new Element(Cr, 1) ));
 
         }
 
-        else if(event.Name.contains("dustCinnabar")) {
+            // ------------------------------------------------------------
+
+            // ------------------------------------------------------------
+            // name=dustCinnabar, energy=100MJ, probability=1.00F, multiply all by 1
+            // recipe dictionary is ['HgS']
+            /**
+                item            : dustCinnabar
+                energy          : 100MJ
+                prob            : 1.00F
+                recipe          : ['HgS']
+                molDict         : {}
+                elemDict        : {'S': 1, 'Hg': 1}
+                mol_lst         : []
+                elem_lst        : ['new Element(Hg, 1)', 'new Element(S, 1)']
+                java elem code  : new Element(Hg, 1), new Element(S, 1)
+            **/
+
+        else if(event.Name.contentEquals("dustCinnabar")) {
             DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(Hg, 1), new Element(S, 1) ));
-            // no special synthesis rule
+            SynthesisRecipe.add(new SynthesisRecipe(event.Ore, false, 100, new Element(Hg, 1), new Element(S, 1) ));
 
         }
 
-        else if(event.Name.contains("dustClay")) {
+            // ------------------------------------------------------------
+
+            // ------------------------------------------------------------
+            // name=dustClay, energy=100MJ, probability=1.00F, multiply all by 1
+            // recipe dictionary is ['kaolinite']
+            /**
+                item            : dustClay
+                energy          : 100MJ
+                prob            : 1.00F
+                recipe          : ['kaolinite']
+                molDict         : {'kaolinite': 1}
+                elemDict        : {}
+                mol_lst         : ['new Molecule(kaolinite, 1)']
+                elem_lst        : []
+                java elem code  : new Molecule(kaolinite, 1)
+            **/
+
+        else if(event.Name.contentEquals("dustClay")) {
             DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Molecule(kaolinite, 1) ));
-            // no special synthesis rule
+            SynthesisRecipe.add(new SynthesisRecipe(event.Ore, false, 100, new Molecule(kaolinite, 1) ));
 
         }
 
-        else if(event.Name.contains("dustCoal")) {
+            // ------------------------------------------------------------
+
+            // ------------------------------------------------------------
+            // name=dustCoal, energy=100MJ, probability=1.00F, multiply all by 1
+            // recipe dictionary is ['C4']
+            /**
+                item            : dustCoal
+                energy          : 100MJ
+                prob            : 1.00F
+                recipe          : ['C4']
+                molDict         : {}
+                elemDict        : {'C': 4}
+                mol_lst         : []
+                elem_lst        : ['new Element(C, 4)']
+                java elem code  : new Element(C, 4)
+            **/
+
+        else if(event.Name.contentEquals("dustCoal")) {
             DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(C, 4) ));
-            // no special synthesis rule
+            SynthesisRecipe.add(new SynthesisRecipe(event.Ore, false, 100, new Element(C, 4) ));
 
         }
 
-        else if(event.Name.contains("dustCopper")) {
-            DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(Cu, 1) ));
-            // no special synthesis rule
+            // ------------------------------------------------------------
+
+            // ------------------------------------------------------------
+            // name=dustCopper, energy=100MJ, probability=1.00F, multiply all by 2
+            // recipe dictionary is ['Cu']
+            /**
+                item            : dustCopper
+                energy          : 100MJ
+                prob            : 1.00F
+                recipe          : ['Cu']
+                molDict         : {}
+                elemDict        : {'Cu': 2}
+                mol_lst         : []
+                elem_lst        : ['new Element(Cu, 2)']
+                java elem code  : new Element(Cu, 2)
+            **/
+
+        else if(event.Name.contentEquals("dustCopper")) {
+            DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(Cu, 2) ));
+            SynthesisRecipe.add(new SynthesisRecipe(event.Ore, false, 100, new Element(Cu, 2) ));
 
         }
 
-        else if(event.Name.contains("dustDiamond")) {
+            // ------------------------------------------------------------
+
+            // ------------------------------------------------------------
+            // name=dustDiamond, energy=100MJ, probability=1.00F, multiply all by 1
+            // recipe dictionary is ['C64']
+            /**
+                item            : dustDiamond
+                energy          : 100MJ
+                prob            : 1.00F
+                recipe          : ['C64']
+                molDict         : {}
+                elemDict        : {'C': 64}
+                mol_lst         : []
+                elem_lst        : ['new Element(C, 64)']
+                java elem code  : new Element(C, 64)
+            **/
+
+        else if(event.Name.contentEquals("dustDiamond")) {
             DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(C, 64) ));
-            // no special synthesis rule
+            SynthesisRecipe.add(new SynthesisRecipe(event.Ore, false, 100, new Element(C, 64) ));
 
         }
 
-        else if(event.Name.contains("dustElectrum")) {
-            DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(Ag, 1), new Element(Au, 1) ));
-            // no special synthesis rule
+            // ------------------------------------------------------------
+
+            // ------------------------------------------------------------
+            // name=dustElectrum, energy=100MJ, probability=1.00F, multiply all by 2
+            // recipe dictionary is ['AgAu']
+            /**
+                item            : dustElectrum
+                energy          : 100MJ
+                prob            : 1.00F
+                recipe          : ['AgAu']
+                molDict         : {}
+                elemDict        : {'Au': 2, 'Ag': 2}
+                mol_lst         : []
+                elem_lst        : ['new Element(Ag, 2)', 'new Element(Au, 2)']
+                java elem code  : new Element(Ag, 2), new Element(Au, 2)
+            **/
+
+        else if(event.Name.contentEquals("dustElectrum")) {
+            DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(Ag, 2), new Element(Au, 2) ));
+            SynthesisRecipe.add(new SynthesisRecipe(event.Ore, false, 100, new Element(Ag, 2), new Element(Au, 2) ));
 
         }
 
-        else if(event.Name.contains("dustEmerald")) {
+            // ------------------------------------------------------------
+
+            // ------------------------------------------------------------
+            // name=dustEmerald, energy=100MJ, probability=1.00F, multiply all by 1
+            // recipe dictionary is ['Be3Al2Si6O18']
+            /**
+                item            : dustEmerald
+                energy          : 100MJ
+                prob            : 1.00F
+                recipe          : ['Be3Al2Si6O18']
+                molDict         : {}
+                elemDict        : {'Be': 3, 'Si': 6, 'Al': 2, 'O': 18}
+                mol_lst         : []
+                elem_lst        : ['new Element(Be, 3)', 'new Element(Al, 2)', 'new Element(Si, 6)', 'new Element(O, 18)']
+                java elem code  : new Element(Be, 3), new Element(Al, 2), new Element(Si, 6), new Element(O, 18)
+            **/
+
+        else if(event.Name.contentEquals("dustEmerald")) {
             DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(Be, 3), new Element(Al, 2), new Element(Si, 6), new Element(O, 18) ));
-            // no special synthesis rule
+            SynthesisRecipe.add(new SynthesisRecipe(event.Ore, false, 100, new Element(Be, 3), new Element(Al, 2), new Element(Si, 6), new Element(O, 18) ));
 
         }
 
-        else if(event.Name.contains("dustEnderEye")) {
+            // ------------------------------------------------------------
+
+            // ------------------------------------------------------------
+            // name=dustEnderEye, energy=100MJ, probability=1.00F, multiply all by 1
+            // recipe dictionary is ['BeK4N5Cl6C4S2']
+            /**
+                item            : dustEnderEye
+                energy          : 100MJ
+                prob            : 1.00F
+                recipe          : ['BeK4N5Cl6C4S2']
+                molDict         : {}
+                elemDict        : {'Be': 1, 'C': 4, 'Cl': 6, 'K': 4, 'N': 5, 'S': 2}
+                mol_lst         : []
+                elem_lst        : ['new Element(Be, 1)', 'new Element(K, 4)', 'new Element(N, 5)', 'new Element(Cl, 6)', 'new Element(C, 4)', 'new Element(S, 2)']
+                java elem code  : new Element(Be, 1), new Element(K, 4), new Element(N, 5), new Element(Cl, 6), new Element(C, 4), new Element(S, 2)
+            **/
+
+        else if(event.Name.contentEquals("dustEnderEye")) {
             DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(Be, 1), new Element(K, 4), new Element(N, 5), new Element(Cl, 6), new Element(C, 4), new Element(S, 2) ));
-            // no special synthesis rule
+            SynthesisRecipe.add(new SynthesisRecipe(event.Ore, false, 100, new Element(Be, 1), new Element(K, 4), new Element(N, 5), new Element(Cl, 6), new Element(C, 4), new Element(S, 2) ));
 
         }
 
-        else if(event.Name.contains("dustEnderPearl")) {
+            // ------------------------------------------------------------
+
+            // ------------------------------------------------------------
+            // name=dustEnderPearl, energy=100MJ, probability=1.00F, multiply all by 1
+            // recipe dictionary is ['BeK4N5Cl6']
+            /**
+                item            : dustEnderPearl
+                energy          : 100MJ
+                prob            : 1.00F
+                recipe          : ['BeK4N5Cl6']
+                molDict         : {}
+                elemDict        : {'Be': 1, 'K': 4, 'Cl': 6, 'N': 5}
+                mol_lst         : []
+                elem_lst        : ['new Element(Be, 1)', 'new Element(K, 4)', 'new Element(N, 5)', 'new Element(Cl, 6)']
+                java elem code  : new Element(Be, 1), new Element(K, 4), new Element(N, 5), new Element(Cl, 6)
+            **/
+
+        else if(event.Name.contentEquals("dustEnderPearl")) {
             DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(Be, 1), new Element(K, 4), new Element(N, 5), new Element(Cl, 6) ));
-            // no special synthesis rule
+            SynthesisRecipe.add(new SynthesisRecipe(event.Ore, false, 100, new Element(Be, 1), new Element(K, 4), new Element(N, 5), new Element(Cl, 6) ));
 
         }
 
-        else if(event.Name.contains("dustGarnetRed")) {
+            // ------------------------------------------------------------
+
+            // ------------------------------------------------------------
+            // name=dustGarnetRed, energy=500MJ, probability=1.00F, multiply all by 1
+            // recipe dictionary is ['(Al2Mg3SiO4)3(Al2Fe3Si3O12)5(Al2Mn3Si3O12)8']
+            /**
+                item            : dustGarnetRed
+                energy          : 500MJ
+                prob            : 1.00F
+                recipe          : ['(Al2Mg3SiO4)3(Al2Fe3Si3O12)5(Al2Mn3Si3O12)8']
+                molDict         : {}
+                elemDict        : {'Mg': 9, 'Mn': 24, 'Al': 32, 'O': 168, 'Si': 42, 'Fe': 15}
+                mol_lst         : []
+                elem_lst        : ['new Element(Al, 32)', 'new Element(Mg, 9)', 'new Element(Si, 42)', 'new Element(O, 168)', 'new Element(Fe, 15)', 'new Element(Mn, 24)']
+                java elem code  : new Element(Al, 32), new Element(Mg, 9), new Element(Si, 42), new Element(O, 168), new Element(Fe, 15), new Element(Mn, 24)
+            **/
+
+        else if(event.Name.contentEquals("dustGarnetRed")) {
             DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(Al, 32), new Element(Mg, 9), new Element(Si, 42), new Element(O, 168), new Element(Fe, 15), new Element(Mn, 24) ));
-            // no special synthesis rule
+            SynthesisRecipe.add(new SynthesisRecipe(event.Ore, false, 500, new Element(Al, 32), new Element(Mg, 9), new Element(Si, 42), new Element(O, 168), new Element(Fe, 15), new Element(Mn, 24) ));
 
         }
 
-        else if(event.Name.contains("dustGarnetYellow")) {
+            // ------------------------------------------------------------
+
+            // ------------------------------------------------------------
+            // name=dustGarnetYellow, energy=500MJ, probability=1.00F, multiply all by 1
+            // recipe dictionary is ['(Ca3Fe2Si3O12)5(Ca3Al2Si3O12)8(Ca3Cr2Si3O12)3']
+            /**
+                item            : dustGarnetYellow
+                energy          : 500MJ
+                prob            : 1.00F
+                recipe          : ['(Ca3Fe2Si3O12)5(Ca3Al2Si3O12)8(Ca3Cr2Si3O12)3']
+                molDict         : {}
+                elemDict        : {'Ca': 48, 'Al': 16, 'O': 192, 'Si': 48, 'Fe': 10, 'Cr': 6}
+                mol_lst         : []
+                elem_lst        : ['new Element(Ca, 48)', 'new Element(Fe, 10)', 'new Element(Si, 48)', 'new Element(O, 192)', 'new Element(Al, 16)', 'new Element(Cr, 6)']
+                java elem code  : new Element(Ca, 48), new Element(Fe, 10), new Element(Si, 48), new Element(O, 192), new Element(Al, 16), new Element(Cr, 6)
+            **/
+
+        else if(event.Name.contentEquals("dustGarnetYellow")) {
             DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(Ca, 48), new Element(Fe, 10), new Element(Si, 48), new Element(O, 192), new Element(Al, 16), new Element(Cr, 6) ));
-            // no special synthesis rule
+            SynthesisRecipe.add(new SynthesisRecipe(event.Ore, false, 500, new Element(Ca, 48), new Element(Fe, 10), new Element(Si, 48), new Element(O, 192), new Element(Al, 16), new Element(Cr, 6) ));
 
         }
 
-        else if(event.Name.contains("dustGold")) {
+            // ------------------------------------------------------------
+
+            // ------------------------------------------------------------
+            // name=dustGold, energy=100MJ, probability=1.00F, multiply all by 1
+            // recipe dictionary is ['Au2']
+            /**
+                item            : dustGold
+                energy          : 100MJ
+                prob            : 1.00F
+                recipe          : ['Au2']
+                molDict         : {}
+                elemDict        : {'Au': 2}
+                mol_lst         : []
+                elem_lst        : ['new Element(Au, 2)']
+                java elem code  : new Element(Au, 2)
+            **/
+
+        else if(event.Name.contentEquals("dustGold")) {
             DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(Au, 2) ));
-            // no special synthesis rule
+            SynthesisRecipe.add(new SynthesisRecipe(event.Ore, false, 100, new Element(Au, 2) ));
 
         }
 
-        else if(event.Name.contains("dustGreenSapphire")) {
+            // ------------------------------------------------------------
+
+            // ------------------------------------------------------------
+            // name=dustGreenSapphire, energy=100MJ, probability=1.00F, multiply all by 1
+            // recipe dictionary is ['Al2O6']
+            /**
+                item            : dustGreenSapphire
+                energy          : 100MJ
+                prob            : 1.00F
+                recipe          : ['Al2O6']
+                molDict         : {}
+                elemDict        : {'Al': 2, 'O': 6}
+                mol_lst         : []
+                elem_lst        : ['new Element(Al, 2)', 'new Element(O, 6)']
+                java elem code  : new Element(Al, 2), new Element(O, 6)
+            **/
+
+        else if(event.Name.contentEquals("dustGreenSapphire")) {
             DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(Al, 2), new Element(O, 6) ));
-            // no special synthesis rule
+            SynthesisRecipe.add(new SynthesisRecipe(event.Ore, false, 100, new Element(Al, 2), new Element(O, 6) ));
 
         }
 
-        else if(event.Name.contains("dustGrossular")) {
+            // ------------------------------------------------------------
+
+            // ------------------------------------------------------------
+            // name=dustGrossular, energy=100MJ, probability=1.00F, multiply all by 1
+            // recipe dictionary is ['Ca3Al2Si3O12']
+            /**
+                item            : dustGrossular
+                energy          : 100MJ
+                prob            : 1.00F
+                recipe          : ['Ca3Al2Si3O12']
+                molDict         : {}
+                elemDict        : {'Ca': 3, 'Si': 3, 'Al': 2, 'O': 12}
+                mol_lst         : []
+                elem_lst        : ['new Element(Ca, 3)', 'new Element(Al, 2)', 'new Element(Si, 3)', 'new Element(O, 12)']
+                java elem code  : new Element(Ca, 3), new Element(Al, 2), new Element(Si, 3), new Element(O, 12)
+            **/
+
+        else if(event.Name.contentEquals("dustGrossular")) {
             DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(Ca, 3), new Element(Al, 2), new Element(Si, 3), new Element(O, 12) ));
-            // no special synthesis rule
+            SynthesisRecipe.add(new SynthesisRecipe(event.Ore, false, 100, new Element(Ca, 3), new Element(Al, 2), new Element(Si, 3), new Element(O, 12) ));
 
         }
 
-        else if(event.Name.contains("dustInvar")) {
+            // ------------------------------------------------------------
+
+            // ------------------------------------------------------------
+            // name=dustInvar, energy=100MJ, probability=1.00F, multiply all by 1
+            // recipe dictionary is ['Fe2Ni']
+            /**
+                item            : dustInvar
+                energy          : 100MJ
+                prob            : 1.00F
+                recipe          : ['Fe2Ni']
+                molDict         : {}
+                elemDict        : {'Ni': 1, 'Fe': 2}
+                mol_lst         : []
+                elem_lst        : ['new Element(Fe, 2)', 'new Element(Ni, 1)']
+                java elem code  : new Element(Fe, 2), new Element(Ni, 1)
+            **/
+
+        else if(event.Name.contentEquals("dustInvar")) {
             DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(Fe, 2), new Element(Ni, 1) ));
-            // no special synthesis rule
+            SynthesisRecipe.add(new SynthesisRecipe(event.Ore, false, 100, new Element(Fe, 2), new Element(Ni, 1) ));
 
         }
 
-        else if(event.Name.contains("dustIron")) {
+            // ------------------------------------------------------------
+
+            // ------------------------------------------------------------
+            // name=dustIron, energy=100MJ, probability=1.00F, multiply all by 1
+            // recipe dictionary is ['Fe2']
+            /**
+                item            : dustIron
+                energy          : 100MJ
+                prob            : 1.00F
+                recipe          : ['Fe2']
+                molDict         : {}
+                elemDict        : {'Fe': 2}
+                mol_lst         : []
+                elem_lst        : ['new Element(Fe, 2)']
+                java elem code  : new Element(Fe, 2)
+            **/
+
+        else if(event.Name.contentEquals("dustIron")) {
             DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(Fe, 2) ));
-            // no special synthesis rule
+            SynthesisRecipe.add(new SynthesisRecipe(event.Ore, false, 100, new Element(Fe, 2) ));
 
         }
 
-        else if(event.Name.contains("dustLazurite")) {
+            // ------------------------------------------------------------
+
+            // ------------------------------------------------------------
+            // name=dustLazurite, energy=100MJ, probability=1.00F, multiply all by 1
+            // recipe dictionary is ['Al6Si6Ca8Na8']
+            /**
+                item            : dustLazurite
+                energy          : 100MJ
+                prob            : 1.00F
+                recipe          : ['Al6Si6Ca8Na8']
+                molDict         : {}
+                elemDict        : {'Na': 8, 'Si': 6, 'Ca': 8, 'Al': 6}
+                mol_lst         : []
+                elem_lst        : ['new Element(Al, 6)', 'new Element(Si, 6)', 'new Element(Ca, 8)', 'new Element(Na, 8)']
+                java elem code  : new Element(Al, 6), new Element(Si, 6), new Element(Ca, 8), new Element(Na, 8)
+            **/
+
+        else if(event.Name.contentEquals("dustLazurite")) {
             DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(Al, 6), new Element(Si, 6), new Element(Ca, 8), new Element(Na, 8) ));
-            // no special synthesis rule
+            SynthesisRecipe.add(new SynthesisRecipe(event.Ore, false, 100, new Element(Al, 6), new Element(Si, 6), new Element(Ca, 8), new Element(Na, 8) ));
 
         }
 
-        else if(event.Name.contains("dustLead")) {
+            // ------------------------------------------------------------
+
+            // ------------------------------------------------------------
+            // name=dustLead, energy=100MJ, probability=1.00F, multiply all by 1
+            // recipe dictionary is ['Pb']
+            /**
+                item            : dustLead
+                energy          : 100MJ
+                prob            : 1.00F
+                recipe          : ['Pb']
+                molDict         : {}
+                elemDict        : {'Pb': 1}
+                mol_lst         : []
+                elem_lst        : ['new Element(Pb, 1)']
+                java elem code  : new Element(Pb, 1)
+            **/
+
+        else if(event.Name.contentEquals("dustLead")) {
             DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(Pb, 1) ));
-            // no special synthesis rule
+            SynthesisRecipe.add(new SynthesisRecipe(event.Ore, false, 100, new Element(Pb, 1) ));
 
         }
 
-        else if(event.Name.contains("dustMagnesium")) {
+            // ------------------------------------------------------------
+
+            // ------------------------------------------------------------
+            // name=dustMagnesium, energy=100MJ, probability=1.00F, multiply all by 1
+            // recipe dictionary is ['Mg']
+            /**
+                item            : dustMagnesium
+                energy          : 100MJ
+                prob            : 1.00F
+                recipe          : ['Mg']
+                molDict         : {}
+                elemDict        : {'Mg': 1}
+                mol_lst         : []
+                elem_lst        : ['new Element(Mg, 1)']
+                java elem code  : new Element(Mg, 1)
+            **/
+
+        else if(event.Name.contentEquals("dustMagnesium")) {
             DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(Mg, 1) ));
-            // no special synthesis rule
+            SynthesisRecipe.add(new SynthesisRecipe(event.Ore, false, 100, new Element(Mg, 1) ));
 
         }
 
-        else if(event.Name.contains("dustManganese")) {
+            // ------------------------------------------------------------
+
+            // ------------------------------------------------------------
+            // name=dustManganese, energy=100MJ, probability=1.00F, multiply all by 1
+            // recipe dictionary is ['Mn']
+            /**
+                item            : dustManganese
+                energy          : 100MJ
+                prob            : 1.00F
+                recipe          : ['Mn']
+                molDict         : {}
+                elemDict        : {'Mn': 1}
+                mol_lst         : []
+                elem_lst        : ['new Element(Mn, 1)']
+                java elem code  : new Element(Mn, 1)
+            **/
+
+        else if(event.Name.contentEquals("dustManganese")) {
             DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(Mn, 1) ));
-            // no special synthesis rule
+            SynthesisRecipe.add(new SynthesisRecipe(event.Ore, false, 100, new Element(Mn, 1) ));
 
         }
 
-        else if(event.Name.contains("dustMarble")) {
+            // ------------------------------------------------------------
+
+            // ------------------------------------------------------------
+            // name=dustMarble, energy=100MJ, probability=1.00F, multiply all by 1
+            // recipe dictionary is ['calcite', '7', 'Mg']
+            /**
+                item            : dustMarble
+                energy          : 100MJ
+                prob            : 1.00F
+                recipe          : ['calcite', '7', 'Mg']
+                molDict         : {'calcite': 7}
+                elemDict        : {'Mg': 1}
+                mol_lst         : ['new Molecule(calcite, 7)']
+                elem_lst        : ['new Element(Mg, 1)']
+                java elem code  : new Molecule(calcite, 7), new Element(Mg, 1)
+            **/
+
+        else if(event.Name.contentEquals("dustMarble")) {
             DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Molecule(calcite, 7), new Element(Mg, 1) ));
-            // no special synthesis rule
+            SynthesisRecipe.add(new SynthesisRecipe(event.Ore, false, 100, new Molecule(calcite, 7), new Element(Mg, 1) ));
 
         }
 
-        else if(event.Name.contains("dustNickel")) {
+            // ------------------------------------------------------------
+
+            // ------------------------------------------------------------
+            // name=dustNickel, energy=100MJ, probability=1.00F, multiply all by 1
+            // recipe dictionary is ['Ni']
+            /**
+                item            : dustNickel
+                energy          : 100MJ
+                prob            : 1.00F
+                recipe          : ['Ni']
+                molDict         : {}
+                elemDict        : {'Ni': 1}
+                mol_lst         : []
+                elem_lst        : ['new Element(Ni, 1)']
+                java elem code  : new Element(Ni, 1)
+            **/
+
+        else if(event.Name.contentEquals("dustNickel")) {
             DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(Ni, 1) ));
-            // no special synthesis rule
+            SynthesisRecipe.add(new SynthesisRecipe(event.Ore, false, 100, new Element(Ni, 1) ));
 
         }
 
-        else if(event.Name.contains("dustObsidian")) {
+            // ------------------------------------------------------------
+
+            // ------------------------------------------------------------
+            // name=dustObsidian, energy=100MJ, probability=1.00F, multiply all by 1
+            // recipe dictionary is ['MgFeSiO8']
+            /**
+                item            : dustObsidian
+                energy          : 100MJ
+                prob            : 1.00F
+                recipe          : ['MgFeSiO8']
+                molDict         : {}
+                elemDict        : {'Mg': 1, 'Si': 1, 'Fe': 1, 'O': 8}
+                mol_lst         : []
+                elem_lst        : ['new Element(Mg, 1)', 'new Element(Fe, 1)', 'new Element(Si, 1)', 'new Element(O, 8)']
+                java elem code  : new Element(Mg, 1), new Element(Fe, 1), new Element(Si, 1), new Element(O, 8)
+            **/
+
+        else if(event.Name.contentEquals("dustObsidian")) {
             DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(Mg, 1), new Element(Fe, 1), new Element(Si, 1), new Element(O, 8) ));
-            // no special synthesis rule
+            SynthesisRecipe.add(new SynthesisRecipe(event.Ore, false, 100, new Element(Mg, 1), new Element(Fe, 1), new Element(Si, 1), new Element(O, 8) ));
 
         }
 
-        else if(event.Name.contains("dustOlivine")) {
+            // ------------------------------------------------------------
+
+            // ------------------------------------------------------------
+            // name=dustOlivine, energy=100MJ, probability=1.00F, multiply all by 1
+            // recipe dictionary is ['Mg2Fe2SiO4']
+            /**
+                item            : dustOlivine
+                energy          : 100MJ
+                prob            : 1.00F
+                recipe          : ['Mg2Fe2SiO4']
+                molDict         : {}
+                elemDict        : {'Mg': 2, 'Si': 1, 'Fe': 2, 'O': 4}
+                mol_lst         : []
+                elem_lst        : ['new Element(Mg, 2)', 'new Element(Fe, 2)', 'new Element(Si, 1)', 'new Element(O, 4)']
+                java elem code  : new Element(Mg, 2), new Element(Fe, 2), new Element(Si, 1), new Element(O, 4)
+            **/
+
+        else if(event.Name.contentEquals("dustOlivine")) {
             DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(Mg, 2), new Element(Fe, 2), new Element(Si, 1), new Element(O, 4) ));
-            // no special synthesis rule
+            SynthesisRecipe.add(new SynthesisRecipe(event.Ore, false, 100, new Element(Mg, 2), new Element(Fe, 2), new Element(Si, 1), new Element(O, 4) ));
 
         }
 
-        else if(event.Name.contains("dustPlatinum")) {
+            // ------------------------------------------------------------
+
+            // ------------------------------------------------------------
+            // name=dustPlatinum, energy=100MJ, probability=1.00F, multiply all by 1
+            // recipe dictionary is ['Pt']
+            /**
+                item            : dustPlatinum
+                energy          : 100MJ
+                prob            : 1.00F
+                recipe          : ['Pt']
+                molDict         : {}
+                elemDict        : {'Pt': 1}
+                mol_lst         : []
+                elem_lst        : ['new Element(Pt, 1)']
+                java elem code  : new Element(Pt, 1)
+            **/
+
+        else if(event.Name.contentEquals("dustPlatinum")) {
             DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(Pt, 1) ));
-            // no special synthesis rule
+            SynthesisRecipe.add(new SynthesisRecipe(event.Ore, false, 100, new Element(Pt, 1) ));
 
         }
 
-        else if(event.Name.contains("dustPyrite")) {
+            // ------------------------------------------------------------
+
+            // ------------------------------------------------------------
+            // name=dustPyrite, energy=100MJ, probability=1.00F, multiply all by 1
+            // recipe dictionary is ['pyrite']
+            /**
+                item            : dustPyrite
+                energy          : 100MJ
+                prob            : 1.00F
+                recipe          : ['pyrite']
+                molDict         : {'pyrite': 1}
+                elemDict        : {}
+                mol_lst         : ['new Molecule(pyrite, 1)']
+                elem_lst        : []
+                java elem code  : new Molecule(pyrite, 1)
+            **/
+
+        else if(event.Name.contentEquals("dustPyrite")) {
             DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Molecule(pyrite, 1) ));
-            // no special synthesis rule
+            SynthesisRecipe.add(new SynthesisRecipe(event.Ore, false, 100, new Molecule(pyrite, 1) ));
 
         }
 
-        else if(event.Name.contains("dustPyrope")) {
+            // ------------------------------------------------------------
+
+            // ------------------------------------------------------------
+            // name=dustPyrope, energy=100MJ, probability=1.00F, multiply all by 1
+            // recipe dictionary is ['Al2Mg3SiO4']
+            /**
+                item            : dustPyrope
+                energy          : 100MJ
+                prob            : 1.00F
+                recipe          : ['Al2Mg3SiO4']
+                molDict         : {}
+                elemDict        : {'Mg': 3, 'Si': 1, 'Al': 2, 'O': 4}
+                mol_lst         : []
+                elem_lst        : ['new Element(Al, 2)', 'new Element(Mg, 3)', 'new Element(Si, 1)', 'new Element(O, 4)']
+                java elem code  : new Element(Al, 2), new Element(Mg, 3), new Element(Si, 1), new Element(O, 4)
+            **/
+
+        else if(event.Name.contentEquals("dustPyrope")) {
             DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(Al, 2), new Element(Mg, 3), new Element(Si, 1), new Element(O, 4) ));
-            // no special synthesis rule
+            SynthesisRecipe.add(new SynthesisRecipe(event.Ore, false, 100, new Element(Al, 2), new Element(Mg, 3), new Element(Si, 1), new Element(O, 4) ));
 
         }
 
-        else if(event.Name.contains("dustQuicksilver")) {
+            // ------------------------------------------------------------
+
+            // ------------------------------------------------------------
+            // name=dustQuicksilver, energy=100MJ, probability=1.00F, multiply all by 1
+            // recipe dictionary is ['Hg2']
+            /**
+                item            : dustQuicksilver
+                energy          : 100MJ
+                prob            : 1.00F
+                recipe          : ['Hg2']
+                molDict         : {}
+                elemDict        : {'Hg': 2}
+                mol_lst         : []
+                elem_lst        : ['new Element(Hg, 2)']
+                java elem code  : new Element(Hg, 2)
+            **/
+
+        else if(event.Name.contentEquals("dustQuicksilver")) {
             DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(Hg, 2) ));
-            // no special synthesis rule
+            SynthesisRecipe.add(new SynthesisRecipe(event.Ore, false, 100, new Element(Hg, 2) ));
 
         }
 
-        else if(event.Name.contains("dustRedRock")) {
+            // ------------------------------------------------------------
+
+            // ------------------------------------------------------------
+            // name=dustRedRock, energy=100MJ, probability=1.00F, multiply all by 1
+            // recipe dictionary is ['calcite', '2', 'siliconDioxide']
+            /**
+                item            : dustRedRock
+                energy          : 100MJ
+                prob            : 1.00F
+                recipe          : ['calcite', '2', 'siliconDioxide']
+                molDict         : {'calcite': 2, 'siliconDioxide': 1}
+                elemDict        : {}
+                mol_lst         : ['new Molecule(calcite, 2)', 'new Molecule(siliconDioxide, 1)']
+                elem_lst        : []
+                java elem code  : new Molecule(calcite, 2), new Molecule(siliconDioxide, 1)
+            **/
+
+        else if(event.Name.contentEquals("dustRedRock")) {
             DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Molecule(calcite, 2), new Molecule(siliconDioxide, 1) ));
-            // no special synthesis rule
+            SynthesisRecipe.add(new SynthesisRecipe(event.Ore, false, 100, new Molecule(calcite, 2), new Molecule(siliconDioxide, 1) ));
 
         }
 
-        else if(event.Name.contains("dustRuby")) {
+            // ------------------------------------------------------------
+
+            // ------------------------------------------------------------
+            // name=dustRuby, energy=100MJ, probability=1.00F, multiply all by 1
+            // recipe dictionary is ['Al2O6Cr']
+            /**
+                item            : dustRuby
+                energy          : 100MJ
+                prob            : 1.00F
+                recipe          : ['Al2O6Cr']
+                molDict         : {}
+                elemDict        : {'Cr': 1, 'Al': 2, 'O': 6}
+                mol_lst         : []
+                elem_lst        : ['new Element(Al, 2)', 'new Element(O, 6)', 'new Element(Cr, 1)']
+                java elem code  : new Element(Al, 2), new Element(O, 6), new Element(Cr, 1)
+            **/
+
+        else if(event.Name.contentEquals("dustRuby")) {
             DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(Al, 2), new Element(O, 6), new Element(Cr, 1) ));
-            // no special synthesis rule
+            SynthesisRecipe.add(new SynthesisRecipe(event.Ore, false, 100, new Element(Al, 2), new Element(O, 6), new Element(Cr, 1) ));
 
         }
 
-        else if(event.Name.contains("dustSaltpeter")) {
+            // ------------------------------------------------------------
+
+            // ------------------------------------------------------------
+            // name=dustSaltpeter, energy=100MJ, probability=1.00F, multiply all by 1
+            // recipe dictionary is ['potassiumNitrate']
+            /**
+                item            : dustSaltpeter
+                energy          : 100MJ
+                prob            : 1.00F
+                recipe          : ['potassiumNitrate']
+                molDict         : {'potassiumNitrate': 1}
+                elemDict        : {}
+                mol_lst         : ['new Molecule(potassiumNitrate, 1)']
+                elem_lst        : []
+                java elem code  : new Molecule(potassiumNitrate, 1)
+            **/
+
+        else if(event.Name.contentEquals("dustSaltpeter")) {
             DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Molecule(potassiumNitrate, 1) ));
-            // no special synthesis rule
+            SynthesisRecipe.add(new SynthesisRecipe(event.Ore, false, 100, new Molecule(potassiumNitrate, 1) ));
 
         }
 
-        else if(event.Name.contains("dustSapphire")) {
+            // ------------------------------------------------------------
+
+            // ------------------------------------------------------------
+            // name=dustSapphire, energy=100MJ, probability=1.00F, multiply all by 1
+            // recipe dictionary is ['Al2O6']
+            /**
+                item            : dustSapphire
+                energy          : 100MJ
+                prob            : 1.00F
+                recipe          : ['Al2O6']
+                molDict         : {}
+                elemDict        : {'Al': 2, 'O': 6}
+                mol_lst         : []
+                elem_lst        : ['new Element(Al, 2)', 'new Element(O, 6)']
+                java elem code  : new Element(Al, 2), new Element(O, 6)
+            **/
+
+        else if(event.Name.contentEquals("dustSapphire")) {
             DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(Al, 2), new Element(O, 6) ));
-            // no special synthesis rule
+            SynthesisRecipe.add(new SynthesisRecipe(event.Ore, false, 100, new Element(Al, 2), new Element(O, 6) ));
 
         }
 
-        else if(event.Name.contains("dustSpessartine")) {
+            // ------------------------------------------------------------
+
+            // ------------------------------------------------------------
+            // name=dustSpessartine, energy=100MJ, probability=1.00F, multiply all by 1
+            // recipe dictionary is ['Al2Mn3Si3O12']
+            /**
+                item            : dustSpessartine
+                energy          : 100MJ
+                prob            : 1.00F
+                recipe          : ['Al2Mn3Si3O12']
+                molDict         : {}
+                elemDict        : {'Si': 3, 'Mn': 3, 'Al': 2, 'O': 12}
+                mol_lst         : []
+                elem_lst        : ['new Element(Al, 2)', 'new Element(Mn, 3)', 'new Element(Si, 3)', 'new Element(O, 12)']
+                java elem code  : new Element(Al, 2), new Element(Mn, 3), new Element(Si, 3), new Element(O, 12)
+            **/
+
+        else if(event.Name.contentEquals("dustSpessartine")) {
             DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(Al, 2), new Element(Mn, 3), new Element(Si, 3), new Element(O, 12) ));
-            // no special synthesis rule
+            SynthesisRecipe.add(new SynthesisRecipe(event.Ore, false, 100, new Element(Al, 2), new Element(Mn, 3), new Element(Si, 3), new Element(O, 12) ));
 
         }
 
-        else if(event.Name.contains("dustSteel")) {
+            // ------------------------------------------------------------
+
+            // ------------------------------------------------------------
+            // name=dustSteel, energy=100MJ, probability=1.00F, multiply all by 1
+            // recipe dictionary is ['Fe']
+            /**
+                item            : dustSteel
+                energy          : 100MJ
+                prob            : 1.00F
+                recipe          : ['Fe']
+                molDict         : {}
+                elemDict        : {'Fe': 1}
+                mol_lst         : []
+                elem_lst        : ['new Element(Fe, 1)']
+                java elem code  : new Element(Fe, 1)
+            **/
+
+        else if(event.Name.contentEquals("dustSteel")) {
             DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(Fe, 1) ));
-            // no special synthesis rule
+            SynthesisRecipe.add(new SynthesisRecipe(event.Ore, false, 100, new Element(Fe, 1) ));
 
         }
 
-        else if(event.Name.contains("dustSilver")) {
+            // ------------------------------------------------------------
+
+            // ------------------------------------------------------------
+            // name=dustSilver, energy=100MJ, probability=1.00F, multiply all by 1
+            // recipe dictionary is ['Ag']
+            /**
+                item            : dustSilver
+                energy          : 100MJ
+                prob            : 1.00F
+                recipe          : ['Ag']
+                molDict         : {}
+                elemDict        : {'Ag': 1}
+                mol_lst         : []
+                elem_lst        : ['new Element(Ag, 1)']
+                java elem code  : new Element(Ag, 1)
+            **/
+
+        else if(event.Name.contentEquals("dustSilver")) {
             DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(Ag, 1) ));
-            // no special synthesis rule
+            SynthesisRecipe.add(new SynthesisRecipe(event.Ore, false, 100, new Element(Ag, 1) ));
 
         }
 
-        else if(event.Name.contains("dustSodalite")) {
-            DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(Al, 3), new Element(Si, 3), new Element(Na, 4), new Element(Cl, 1) ));
-            // no special synthesis rule
+            // ------------------------------------------------------------
+
+            // ------------------------------------------------------------
+            // name=dustSodalite, energy=100MJ, probability=1.00F, multiply all by 2
+            // recipe dictionary is ['Al3Si3Na4Cl']
+            /**
+                item            : dustSodalite
+                energy          : 100MJ
+                prob            : 1.00F
+                recipe          : ['Al3Si3Na4Cl']
+                molDict         : {}
+                elemDict        : {'Na': 8, 'Si': 6, 'Al': 6, 'Cl': 2}
+                mol_lst         : []
+                elem_lst        : ['new Element(Al, 6)', 'new Element(Si, 6)', 'new Element(Na, 8)', 'new Element(Cl, 2)']
+                java elem code  : new Element(Al, 6), new Element(Si, 6), new Element(Na, 8), new Element(Cl, 2)
+            **/
+
+        else if(event.Name.contentEquals("dustSodalite")) {
+            DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(Al, 6), new Element(Si, 6), new Element(Na, 8), new Element(Cl, 2) ));
+            SynthesisRecipe.add(new SynthesisRecipe(event.Ore, false, 100, new Element(Al, 6), new Element(Si, 6), new Element(Na, 8), new Element(Cl, 2) ));
 
         }
 
-        else if(event.Name.contains("dustSulfur")) {
+            // ------------------------------------------------------------
+
+            // ------------------------------------------------------------
+            // name=dustSulfur, energy=100MJ, probability=1.00F, multiply all by 1
+            // recipe dictionary is ['S']
+            /**
+                item            : dustSulfur
+                energy          : 100MJ
+                prob            : 1.00F
+                recipe          : ['S']
+                molDict         : {}
+                elemDict        : {'S': 1}
+                mol_lst         : []
+                elem_lst        : ['new Element(S, 1)']
+                java elem code  : new Element(S, 1)
+            **/
+
+        else if(event.Name.contentEquals("dustSulfur")) {
             DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(S, 1) ));
-            // no special synthesis rule
+            SynthesisRecipe.add(new SynthesisRecipe(event.Ore, false, 100, new Element(S, 1) ));
 
         }
 
-        else if(event.Name.contains("dustTin")) {
+            // ------------------------------------------------------------
+
+            // ------------------------------------------------------------
+            // name=dustTin, energy=100MJ, probability=1.00F, multiply all by 1
+            // recipe dictionary is ['Sn']
+            /**
+                item            : dustTin
+                energy          : 100MJ
+                prob            : 1.00F
+                recipe          : ['Sn']
+                molDict         : {}
+                elemDict        : {'Sn': 1}
+                mol_lst         : []
+                elem_lst        : ['new Element(Sn, 1)']
+                java elem code  : new Element(Sn, 1)
+            **/
+
+        else if(event.Name.contentEquals("dustTin")) {
             DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(Sn, 1) ));
-            // no special synthesis rule
+            SynthesisRecipe.add(new SynthesisRecipe(event.Ore, false, 100, new Element(Sn, 1) ));
 
         }
 
-        else if(event.Name.contains("dustTitanium")) {
+            // ------------------------------------------------------------
+
+            // ------------------------------------------------------------
+            // name=dustTitanium, energy=100MJ, probability=1.00F, multiply all by 1
+            // recipe dictionary is ['Ti2']
+            /**
+                item            : dustTitanium
+                energy          : 100MJ
+                prob            : 1.00F
+                recipe          : ['Ti2']
+                molDict         : {}
+                elemDict        : {'Ti': 2}
+                mol_lst         : []
+                elem_lst        : ['new Element(Ti, 2)']
+                java elem code  : new Element(Ti, 2)
+            **/
+
+        else if(event.Name.contentEquals("dustTitanium")) {
             DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(Ti, 2) ));
-            // no special synthesis rule
+            SynthesisRecipe.add(new SynthesisRecipe(event.Ore, false, 100, new Element(Ti, 2) ));
 
         }
 
-        else if(event.Name.contains("dustTungsten")) {
+            // ------------------------------------------------------------
+
+            // ------------------------------------------------------------
+            // name=dustTungsten, energy=100MJ, probability=1.00F, multiply all by 1
+            // recipe dictionary is ['W']
+            /**
+                item            : dustTungsten
+                energy          : 100MJ
+                prob            : 1.00F
+                recipe          : ['W']
+                molDict         : {}
+                elemDict        : {'W': 1}
+                mol_lst         : []
+                elem_lst        : ['new Element(W, 1)']
+                java elem code  : new Element(W, 1)
+            **/
+
+        else if(event.Name.contentEquals("dustTungsten")) {
             DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(W, 1) ));
-            // no special synthesis rule
+            SynthesisRecipe.add(new SynthesisRecipe(event.Ore, false, 100, new Element(W, 1) ));
 
         }
 
-        else if(event.Name.contains("dustUranium")) {
+            // ------------------------------------------------------------
+
+            // ------------------------------------------------------------
+            // name=dustUranium, energy=100MJ, probability=1.00F, multiply all by 1
+            // recipe dictionary is ['U']
+            /**
+                item            : dustUranium
+                energy          : 100MJ
+                prob            : 1.00F
+                recipe          : ['U']
+                molDict         : {}
+                elemDict        : {'U': 1}
+                mol_lst         : []
+                elem_lst        : ['new Element(U, 1)']
+                java elem code  : new Element(U, 1)
+            **/
+
+        else if(event.Name.contentEquals("dustUranium")) {
             DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(U, 1) ));
-            // no special synthesis rule
+            SynthesisRecipe.add(new SynthesisRecipe(event.Ore, false, 100, new Element(U, 1) ));
 
         }
 
-        else if(event.Name.contains("dustUvarovite")) {
+            // ------------------------------------------------------------
+
+            // ------------------------------------------------------------
+            // name=dustUvarovite, energy=100MJ, probability=1.00F, multiply all by 1
+            // recipe dictionary is ['Ca3Cr2Si3O12']
+            /**
+                item            : dustUvarovite
+                energy          : 100MJ
+                prob            : 1.00F
+                recipe          : ['Ca3Cr2Si3O12']
+                molDict         : {}
+                elemDict        : {'Cr': 2, 'Ca': 3, 'Si': 3, 'O': 12}
+                mol_lst         : []
+                elem_lst        : ['new Element(Ca, 3)', 'new Element(Cr, 2)', 'new Element(Si, 3)', 'new Element(O, 12)']
+                java elem code  : new Element(Ca, 3), new Element(Cr, 2), new Element(Si, 3), new Element(O, 12)
+            **/
+
+        else if(event.Name.contentEquals("dustUvarovite")) {
             DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(Ca, 3), new Element(Cr, 2), new Element(Si, 3), new Element(O, 12) ));
-            // no special synthesis rule
+            SynthesisRecipe.add(new SynthesisRecipe(event.Ore, false, 100, new Element(Ca, 3), new Element(Cr, 2), new Element(Si, 3), new Element(O, 12) ));
 
         }
 
-        else if(event.Name.contains("dustWood")) {
+            // ------------------------------------------------------------
+
+            // ------------------------------------------------------------
+            // name=dustWood, energy=100MJ, probability=1.00F, multiply all by 1
+            // recipe dictionary is ['cellulose']
+            /**
+                item            : dustWood
+                energy          : 100MJ
+                prob            : 1.00F
+                recipe          : ['cellulose']
+                molDict         : {'cellulose': 1}
+                elemDict        : {}
+                mol_lst         : ['new Molecule(cellulose, 1)']
+                elem_lst        : []
+                java elem code  : new Molecule(cellulose, 1)
+            **/
+
+        else if(event.Name.contentEquals("dustWood")) {
             DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Molecule(cellulose, 1) ));
-            // no special synthesis rule
+            SynthesisRecipe.add(new SynthesisRecipe(event.Ore, false, 100, new Molecule(cellulose, 1) ));
 
         }
 
-        else if(event.Name.contains("dustZinc")) {
+            // ------------------------------------------------------------
+
+            // ------------------------------------------------------------
+            // name=dustZinc, energy=100MJ, probability=1.00F, multiply all by 1
+            // recipe dictionary is ['Zn']
+            /**
+                item            : dustZinc
+                energy          : 100MJ
+                prob            : 1.00F
+                recipe          : ['Zn']
+                molDict         : {}
+                elemDict        : {'Zn': 1}
+                mol_lst         : []
+                elem_lst        : ['new Element(Zn, 1)']
+                java elem code  : new Element(Zn, 1)
+            **/
+
+        else if(event.Name.contentEquals("dustZinc")) {
             DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(Zn, 1) ));
-            // no special synthesis rule
+            SynthesisRecipe.add(new SynthesisRecipe(event.Ore, false, 100, new Element(Zn, 1) ));
 
         }
 
-        else if(event.Name.contains("fuelCoke")) {
+            // ------------------------------------------------------------
+
+            // ------------------------------------------------------------
+            // name=fuelCoke, energy=100MJ, probability=1.00F, multiply all by 1
+            // recipe dictionary is ['C4']
+            /**
+                item            : fuelCoke
+                energy          : 100MJ
+                prob            : 1.00F
+                recipe          : ['C4']
+                molDict         : {}
+                elemDict        : {'C': 4}
+                mol_lst         : []
+                elem_lst        : ['new Element(C, 4)']
+                java elem code  : new Element(C, 4)
+            **/
+
+        else if(event.Name.contentEquals("fuelCoke")) {
             DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(C, 4) ));
-            // no special synthesis rule
+            SynthesisRecipe.add(new SynthesisRecipe(event.Ore, false, 100, new Element(C, 4) ));
 
         }
 
-        else if(event.Name.contains("ingotInvar")) {
-            DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(Fe, 2), new Element(Ni, 1) ));
-            // no special synthesis rule
+            // ------------------------------------------------------------
+
+            // ------------------------------------------------------------
+            // name=ingotInvar, energy=100MJ, probability=1.00F, multiply all by 2
+            // recipe dictionary is ['Fe2Ni']
+            /**
+                item            : ingotInvar
+                energy          : 100MJ
+                prob            : 1.00F
+                recipe          : ['Fe2Ni']
+                molDict         : {}
+                elemDict        : {'Ni': 2, 'Fe': 4}
+                mol_lst         : []
+                elem_lst        : ['new Element(Fe, 4)', 'new Element(Ni, 2)']
+                java elem code  : new Element(Fe, 4), new Element(Ni, 2)
+            **/
+
+        else if(event.Name.contentEquals("ingotInvar")) {
+            DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(Fe, 4), new Element(Ni, 2) ));
+            SynthesisRecipe.add(new SynthesisRecipe(event.Ore, false, 100, new Element(Fe, 4), new Element(Ni, 2) ));
 
         }
 
-        else if(event.Name.contains("ingotMagnesium")) {
+            // ------------------------------------------------------------
+
+            // ------------------------------------------------------------
+            // name=ingotMagnesium, energy=100MJ, probability=1.00F, multiply all by 1
+            // recipe dictionary is ['Mg2']
+            /**
+                item            : ingotMagnesium
+                energy          : 100MJ
+                prob            : 1.00F
+                recipe          : ['Mg2']
+                molDict         : {}
+                elemDict        : {'Mg': 2}
+                mol_lst         : []
+                elem_lst        : ['new Element(Mg, 2)']
+                java elem code  : new Element(Mg, 2)
+            **/
+
+        else if(event.Name.contentEquals("ingotMagnesium")) {
             DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(Mg, 2) ));
-            // no special synthesis rule
+            SynthesisRecipe.add(new SynthesisRecipe(event.Ore, false, 100, new Element(Mg, 2) ));
 
         }
 
-        else if(event.Name.contains("ingotQuicksilver")) {
+            // ------------------------------------------------------------
+
+            // ------------------------------------------------------------
+            // name=ingotQuicksilver, energy=100MJ, probability=1.00F, multiply all by 1
+            // recipe dictionary is ['Hg2']
+            /**
+                item            : ingotQuicksilver
+                energy          : 100MJ
+                prob            : 1.00F
+                recipe          : ['Hg2']
+                molDict         : {}
+                elemDict        : {'Hg': 2}
+                mol_lst         : []
+                elem_lst        : ['new Element(Hg, 2)']
+                java elem code  : new Element(Hg, 2)
+            **/
+
+        else if(event.Name.contentEquals("ingotQuicksilver")) {
             DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(Hg, 2) ));
-            // no special synthesis rule
+            SynthesisRecipe.add(new SynthesisRecipe(event.Ore, false, 100, new Element(Hg, 2) ));
 
         }
 
-        else if(event.Name.contains("nuggetCopper")) {
-            DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(Cu, 1) ));
-            // no special synthesis rule
+            // ------------------------------------------------------------
+
+            // ------------------------------------------------------------
+            // name=nuggetCopper, energy=100MJ, probability=0.22F, multiply all by 1
+            // recipe dictionary is ['Cu']
+            /**
+                item            : nuggetCopper
+                energy          : 100MJ
+                prob            : 0.22F
+                recipe          : ['Cu']
+                molDict         : {}
+                elemDict        : {'Cu': 1}
+                mol_lst         : []
+                elem_lst        : ['new Element(Cu, 1)']
+                java elem code  : new Element(Cu, 1)
+            **/
+
+        else if(event.Name.contentEquals("nuggetCopper")) {
+            DecomposerRecipe.add(new DecomposerRecipeChance(event.Ore, 0.22F, new Element(Cu, 1)));
+            SynthesisRecipe.add(new SynthesisRecipe(event.Ore, false, 100, new Element(Cu, 1) ));
 
         }
 
-        else if(event.Name.contains("nuggetIron")) {
-            DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(Fe, 1) ));
-            // no special synthesis rule
+            // ------------------------------------------------------------
+
+            // ------------------------------------------------------------
+            // name=nuggetIron, energy=100MJ, probability=0.22F, multiply all by 1
+            // recipe dictionary is ['Fe']
+            /**
+                item            : nuggetIron
+                energy          : 100MJ
+                prob            : 0.22F
+                recipe          : ['Fe']
+                molDict         : {}
+                elemDict        : {'Fe': 1}
+                mol_lst         : []
+                elem_lst        : ['new Element(Fe, 1)']
+                java elem code  : new Element(Fe, 1)
+            **/
+
+        else if(event.Name.contentEquals("nuggetIron")) {
+            DecomposerRecipe.add(new DecomposerRecipeChance(event.Ore, 0.22F, new Element(Fe, 1)));
+            SynthesisRecipe.add(new SynthesisRecipe(event.Ore, false, 100, new Element(Fe, 1) ));
 
         }
 
-        else if(event.Name.contains("nuggetLead")) {
-            DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(Pb, 1) ));
-            // no special synthesis rule
+            // ------------------------------------------------------------
+
+            // ------------------------------------------------------------
+            // name=nuggetLead, energy=100MJ, probability=0.22F, multiply all by 1
+            // recipe dictionary is ['Pb']
+            /**
+                item            : nuggetLead
+                energy          : 100MJ
+                prob            : 0.22F
+                recipe          : ['Pb']
+                molDict         : {}
+                elemDict        : {'Pb': 1}
+                mol_lst         : []
+                elem_lst        : ['new Element(Pb, 1)']
+                java elem code  : new Element(Pb, 1)
+            **/
+
+        else if(event.Name.contentEquals("nuggetLead")) {
+            DecomposerRecipe.add(new DecomposerRecipeChance(event.Ore, 0.22F, new Element(Pb, 1)));
+            SynthesisRecipe.add(new SynthesisRecipe(event.Ore, false, 100, new Element(Pb, 1) ));
 
         }
 
-        else if(event.Name.contains("nuggetSilver")) {
-            DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(Ag, 1) ));
-            // no special synthesis rule
+            // ------------------------------------------------------------
+
+            // ------------------------------------------------------------
+            // name=nuggetSilver, energy=100MJ, probability=0.22F, multiply all by 1
+            // recipe dictionary is ['Ag']
+            /**
+                item            : nuggetSilver
+                energy          : 100MJ
+                prob            : 0.22F
+                recipe          : ['Ag']
+                molDict         : {}
+                elemDict        : {'Ag': 1}
+                mol_lst         : []
+                elem_lst        : ['new Element(Ag, 1)']
+                java elem code  : new Element(Ag, 1)
+            **/
+
+        else if(event.Name.contentEquals("nuggetSilver")) {
+            DecomposerRecipe.add(new DecomposerRecipeChance(event.Ore, 0.22F, new Element(Ag, 1)));
+            SynthesisRecipe.add(new SynthesisRecipe(event.Ore, false, 100, new Element(Ag, 1) ));
 
         }
 
-        else if(event.Name.contains("nuggetTin")) {
-            DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Element(Sn, 1) ));
-            // no special synthesis rule
+            // ------------------------------------------------------------
+
+            // ------------------------------------------------------------
+            // name=nuggetTin, energy=100MJ, probability=0.22F, multiply all by 1
+            // recipe dictionary is ['Sn']
+            /**
+                item            : nuggetTin
+                energy          : 100MJ
+                prob            : 0.22F
+                recipe          : ['Sn']
+                molDict         : {}
+                elemDict        : {'Sn': 1}
+                mol_lst         : []
+                elem_lst        : ['new Element(Sn, 1)']
+                java elem code  : new Element(Sn, 1)
+            **/
+
+        else if(event.Name.contentEquals("nuggetTin")) {
+            DecomposerRecipe.add(new DecomposerRecipeChance(event.Ore, 0.22F, new Element(Sn, 1)));
+            SynthesisRecipe.add(new SynthesisRecipe(event.Ore, false, 100, new Element(Sn, 1) ));
 
         }
 
-        else if(event.Name.contains("pulpWood")) {
+            // ------------------------------------------------------------
+
+            // ------------------------------------------------------------
+            // name=pulpWood, energy=100MJ, probability=1.00F, multiply all by 1
+            // recipe dictionary is ['cellulose']
+            /**
+                item            : pulpWood
+                energy          : 100MJ
+                prob            : 1.00F
+                recipe          : ['cellulose']
+                molDict         : {'cellulose': 1}
+                elemDict        : {}
+                mol_lst         : ['new Molecule(cellulose, 1)']
+                elem_lst        : []
+                java elem code  : new Molecule(cellulose, 1)
+            **/
+
+        else if(event.Name.contentEquals("pulpWood")) {
             DecomposerRecipe.add(new DecomposerRecipe(event.Ore, new Molecule(cellulose, 1) ));
-            // no special synthesis rule
+            SynthesisRecipe.add(new SynthesisRecipe(event.Ore, false, 100, new Molecule(cellulose, 1) ));
 
         }
+
+            // ------------------------------------------------------------
 
 

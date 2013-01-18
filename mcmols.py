@@ -3,7 +3,7 @@
 # molecules available via Minechem's API
 
 EnumMolecule = {
-"cellulose"
+"cellulose",
 "water",
 "carbonDioxide",
 "nitrogenDioxide",

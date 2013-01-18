@@ -2,13 +2,64 @@
             ItemStack rottenFlesh = new ItemStack(Item.rottenFlesh);
             ItemStack bread = new ItemStack(Item.bread);
 
-            DecomposerRecipe.add(new DecomposerRecipe(wheat, new Element(C, 10), new Element(H, 10), new Element(O, 4) ));
-            // no special synthesis rule
+            // ------------------------------------------------------------
+            // name=wheat, energy=30MJ, probability=0.50F, multiply all by 1
+            // recipe dictionary is ['C10H10O4']
+            /**
+                item            : wheat
+                energy          : 30MJ
+                prob            : 0.50F
+                recipe          : ['C10H10O4']
+                molDict         : {}
+                elemDict        : {'H': 10, 'C': 10, 'O': 4}
+                mol_lst         : []
+                elem_lst        : ['new Element(C, 10)', 'new Element(H, 10)', 'new Element(O, 4)']
+                java elem code  : new Element(C, 10), new Element(H, 10), new Element(O, 4)
+            **/
+
+            DecomposerRecipe.add(new DecomposerRecipeChance(wheat, 0.50F, new Element(C, 10), new Element(H, 10), new Element(O, 4)));
+            SynthesisRecipe.add(new SynthesisRecipe(wheat, false, 30, new Element(C, 10), new Element(H, 10), new Element(O, 4) ));
+
+            // ------------------------------------------------------------
+
+            // ------------------------------------------------------------
+            // name=rottenFlesh, energy=100MJ, probability=1.00F, multiply all by 1
+            // recipe dictionary is ['ammonium', 'CH4']
+            /**
+                item            : rottenFlesh
+                energy          : 100MJ
+                prob            : 1.00F
+                recipe          : ['ammonium', 'CH4']
+                molDict         : {'ammonium': 1}
+                elemDict        : {'H': 4, 'C': 1}
+                mol_lst         : ['new Molecule(ammonium, 1)']
+                elem_lst        : ['new Element(C, 1)', 'new Element(H, 4)']
+                java elem code  : new Molecule(ammonium, 1), new Element(C, 1), new Element(H, 4)
+            **/
 
             DecomposerRecipe.add(new DecomposerRecipe(rottenFlesh, new Molecule(ammonium, 1), new Element(C, 1), new Element(H, 4) ));
-            // no special synthesis rule
+            SynthesisRecipe.add(new SynthesisRecipe(rottenFlesh, false, 100, new Molecule(ammonium, 1), new Element(C, 1), new Element(H, 4) ));
+
+            // ------------------------------------------------------------
+
+            // ------------------------------------------------------------
+            // name=bread, energy=10MJ, probability=1.00F, multiply all by 1
+            // recipe dictionary is ['sucrose', '3']
+            /**
+                item            : bread
+                energy          : 10MJ
+                prob            : 1.00F
+                recipe          : ['sucrose', '3']
+                molDict         : {'sucrose': 3}
+                elemDict        : {}
+                mol_lst         : ['new Molecule(sucrose, 3)']
+                elem_lst        : []
+                java elem code  : new Molecule(sucrose, 3)
+            **/
 
             DecomposerRecipe.add(new DecomposerRecipe(bread, new Molecule(sucrose, 3) ));
             SynthesisRecipe.add(new SynthesisRecipe(bread, false, 10, new Molecule(sucrose, 3) ));
+
+            // ------------------------------------------------------------
 
 
