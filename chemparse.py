@@ -126,9 +126,3 @@ if __name__ == '__main__':
     FP = FormulaParser(src)
     for e, a in FP:
         print(e,a)
-    #print('elemstck =',FP.elemstack)
-    #print('elemdict =',FP.elemdict)
-    #print('sortordr =',FP.sorting_order)
-    #print('    tail =',FP.tail)
-    #print('     H @ =',FP['H'])
-    #print()

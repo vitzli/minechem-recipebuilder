@@ -3,7 +3,7 @@
 # molecules available via Minechem's API
 
 EnumMolecule = {
-"cellulose",
+"cellulose"
 "water",
 "carbonDioxide",
 "nitrogenDioxide",
@@ -78,4 +78,22 @@ EnumMolecule = {
 "testosterone",
 "kaolinite",
 "myriocin",
-"arginine",}
+"arginine",
+"shikimicAcid",
+"sulfuricAcid",
+"glyphosate",
+"quinine",
+"ddt",
+"dota",
+"poison",
+"xanax",
+"pkone",
+"pktwo",
+"pkthree",
+"pkfour",
+"pkfive",
+"salt",
+"nhthree",
+"nod",
+"potato",
+"ttx",}
