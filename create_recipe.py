@@ -287,7 +287,7 @@ if __name__ == '__main__':
     for line in open(args.filename,'rt'):
 
         nl = line.strip()
-        nl = nl.unquote(nl)
+        nl = up.unquote(nl)
 
         row = nl.split('#', 1)[0]
         row = row.split()
