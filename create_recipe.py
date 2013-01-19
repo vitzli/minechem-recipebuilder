@@ -103,7 +103,7 @@ def isMolecule(item):
 
 class Recipe:
     def __init__(self, name="", energy=ENERGY_DEFAULT, prob="1.0F", recipe=[],isSynthesis=True, mode="i", multiplier=1):
-        self.name = up.unquote(name,encoding='latin-1')
+        self.name = name
         self.energy = energy
         self.prob = prob
         self.molDict = dict()
@@ -287,6 +287,7 @@ if __name__ == '__main__':
     for line in open(args.filename,'rt'):
 
         nl = line.strip()
+        nl = nl.unquote(nl)
 
         row = nl.split('#', 1)[0]
         row = row.split()
