@@ -55,6 +55,7 @@
 
 import io
 import argparse
+import urllib.parse as up # for spaces in the ore names
 
 import mcmols
 import chemparse
@@ -102,7 +103,7 @@ def isMolecule(item):
 
 class Recipe:
     def __init__(self, name="", energy=ENERGY_DEFAULT, prob="1.0F", recipe=[],isSynthesis=True, mode="i", multiplier=1):
-        self.name = name
+        self.name = up.unquote(name,encoding='latin-1')
         self.energy = energy
         self.prob = prob
         self.molDict = dict()
@@ -147,7 +148,7 @@ class Recipe:
                     else:
                         self.elemDict[k] = v
             except:
-                print("exception at item=",item, Exception)
+                print("recipe:",self.name," - exception at item=",item, Exception)
         
             lastMol = ""
 
@@ -280,6 +281,8 @@ if __name__ == '__main__':
     
     out_mainrecipe = ""
     out_itemstack = ""
+
+    line_number = 1
 
     for line in open(args.filename,'rt'):
 
