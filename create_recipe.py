@@ -268,26 +268,17 @@ def getMult(listname):
             return multValue
         i += 1
     return 1
-   
-if __name__ == '__main__':
-    parser = argparse.ArgumentParser(description='generate MineChem recipe from file')
-    parser.add_argument('mode',metavar = 'MODE', type=str, help='[i | o] process file as item list or ore list',choices=('i','o'))
-    parser.add_argument('filename',metavar = 'FILENAME', type=str, help='list with associated formulas')
-    parser.add_argument('--debug',action='store_true',help='debug mode',default=False)
-    args = parser.parse_args()
-    
+
+def processRecipe(recipeObject,mode,debug=False, header=""):
     mainrecipe = io.StringIO()
     itemstack = io.StringIO()
-    
-    out_mainrecipe = ""
-    out_itemstack = ""
 
-    line_number = 1
+    print(file=mainrecipe)
+    print('        //','--- start of auto-generated code, {header} ---\n'.format(header=header),file=mainrecipe)
 
-    for line in open(args.filename,'rt'):
+    for line in recipeObject:
 
         nl = line.strip()
-        nl = up.unquote(nl)
 
         row = nl.split('#', 1)[0]
         row = row.split()
@@ -295,7 +286,7 @@ if __name__ == '__main__':
         if len(row)<2 or nl[0]=="#":
             continue
 
-        recipeName = row[0]
+        recipeName = up.unquote(row[0])
         if recipeName[0]=="!":
             recipeName = recipeName[1:]
             row[0] = recipeName
@@ -312,29 +303,45 @@ if __name__ == '__main__':
                            prob=p,\
                            isSynthesis=isSynth,\
                            recipe=row[1:],\
-                           mode=args.mode,\
+                           mode=mode,\
                            multiplier=m)
 
-        if args.debug:
-            print('            //','--'*30,file=mainrecipe)
-            print('            //',COMMENT_FMT.format(name=newRecipe.name, \
+        if debug:
+            print('        //','--'*30,file=mainrecipe)
+            print('        //',COMMENT_FMT.format(name=newRecipe.name, \
                                         energy=newRecipe.energy,\
                                         prob=newRecipe.prob, mult=newRecipe.mult), file=mainrecipe)
-            print('            // recipe dictionary is',newRecipe.recipe, file=mainrecipe)
+            print('        // recipe dictionary is',newRecipe.recipe, file=mainrecipe)
             print(newRecipe,file=mainrecipe)
         else:
-            print('            //',COMMENT_FMT.format(name=newRecipe.name, \
+            print('        //',COMMENT_FMT.format(name=newRecipe.name, \
                                         energy=newRecipe.energy,\
                                         prob=newRecipe.prob, mult=newRecipe.mult), file=mainrecipe)
-            print('            // recipe dictionary is',newRecipe.recipe, file=mainrecipe)
+            print('        // recipe dictionary is',newRecipe.recipe, file=mainrecipe)
 
         if newRecipe.itemstackCode is not None:
             print(newRecipe.itemstackCode,file=itemstack)
 
         print(newRecipe.mainCode,file=mainrecipe)
-        if args.debug:
-            print('            //','--'*30,file=mainrecipe)
+        if debug:
+            print('        //','--'*30,file=mainrecipe)
             print(file=mainrecipe)
+    
+    print('        //','--- end of auto-generated code ---',file=mainrecipe)
 
-    print(itemstack.getvalue())
-    print(mainrecipe.getvalue())
+    return (itemstack.getvalue(), mainrecipe.getvalue())
+   
+if __name__ == '__main__':
+    parser = argparse.ArgumentParser(description='generate MineChem recipe from file')
+    parser.add_argument('mode',metavar = 'MODE', type=str, help='[i | o] process file as item list or ore list',choices=('i','o'))
+    parser.add_argument('filename',metavar = 'FILENAME', type=str, help='list with associated formulas')
+    parser.add_argument('--debug',action='store_true',help='debug mode',default=False)
+
+    args = parser.parse_args()
+    
+    fileObject = open(args.filename,'rt')
+
+    i, m = processRecipe(fileObject,args.mode)
+
+    print(i)
+    print(m)
