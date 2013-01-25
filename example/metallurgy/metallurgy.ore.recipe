@@ -1,0 +1,31 @@
+# metallurgy.ore.ore.recipe    
+oreAdamantine e=100 p=0.5  Cn-Co(BrO3)2 water 6
+oreAdluorite e=90   ZrO2
+oreAredrite e=90   CCeRu
+oreAstral%20Silver e=90   Ag-Ni-PdTe
+oreAtlarus e=100   W3C
+oreBitumen    
+oreCarmot e=90   Ni-ReCl3
+oreCeruclase e=90   Os3(CO)12
+oreDeep%20Iron e=90   MnFeZnCO3
+oreEximite e=90   Pd3Ti
+oreIgnatius e=70   O3PdSi
+oreInfuscolium e=90   Fe3Th
+oreKalendrite e=90   BN
+oreLemurite e=80   LiC2H5O
+oreMagnesium    
+oreManganese    
+oreMeutoite e=90   Es(NO3)3
+oreMidasium e=80 p=0.1  Au3Cn
+oreMithril e=90   Pd-NbC
+oreOrichalcum e=100   ReB2
+oreOureclase e=90   HgTeO3
+orePhosphorite    
+orePotash    
+orePrometheum e=80   CeFeZn
+oreRubracium e=100   RuTe2
+oreSanguinite e=100   TiVFeC-Co(NO3)2
+oreShadow%20Iron e=80   Fe4NiS4
+oreVulcanite e=100   Al-Cr2O3
+oreVyroxeres e=80   ZnWO4
+

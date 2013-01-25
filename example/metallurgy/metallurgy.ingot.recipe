@@ -1,0 +1,38 @@
+# metallurgy.ore.ingot.recipe    
+ingotAdamantine e=780   Cn-Co(BrO3)2 water 6
+ingotAdluorite e=720   ZrO2
+ingotAmordrine e=400   Pt-BN
+ingotAngmallen e=400   (FeAu)2
+ingotAredrite e=720   CCeRu
+ingotAstral%20Silver e=740   Ag-Ni-PdTe
+ingotAtlarus e=780   W3C
+ingotBlack%20Steel e=400   Fe4C-MnZnThO3
+ingotCarmot e=740   Ni-ReCl3
+ingotCelenegil e=400   PtReB2
+ingotCeruclase e=690   Os3(CO)12
+ingotDamascus%20Steel e=400   Cu3Fe2Sn
+ingotDeep%20Iron e=660   MnFeZnCO3
+ingotDesichalkos e=400   Pd3TiUO2(NO3)2
+ingotEximite e=640   Pd3Ti
+ingotHaderoth e=400   Pd-NbC=RuTe2
+ingotHepatizon e=400   Au2Cu3Sn
+ingotIgnatius e=470   O3PdSi
+ingotInfuscolium e=700   Fe3Th
+ingotInolashite e=400   Os3(CO)12-ZrO2
+ingotKalendrite e=720   BN
+ingotLemurite e=570   LiC2H5O
+ingotManganese    
+ingotMeutoite e=740   Es(NO3)3
+ingotMidasium e=600   Au3Cn
+ingotMithril e=740   Pd-NbC
+ingotOrichalcum e=750   ReB2
+ingotOureclase e=720   HgTeO3
+ingotPrometheum e=600   CeFeZn
+ingotRubracium e=760   RuTe2
+ingotSanguinite e=760   TiVFeC-Co(NO3)2
+ingotShadow%20Iron e=530   Fe4NiS4
+ingotShadow%20Steel e=400   LiC2H5O-Fe4NiS4
+ingotTartarite e=400   W3C-Cn-Co(BrO3)2 water 6
+ingotVulcanite e=760   Al-Cr2O3
+ingotVyroxeres e=610   ZnWO4
+

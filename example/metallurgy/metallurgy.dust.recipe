@@ -1,0 +1,37 @@
+# metallurgy.ore.dust.recipe    
+dustAdamantine e=390   Cn-Co(BrO3)2 water 6
+dustAdluorite e=360   ZrO2
+dustAmordrine e=200   Pt-BN
+dustAngmallen e=200   (FeAu)2
+dustAredrite e=360   CCeRu
+dustAstral%20Silver e=370   Ag-Ni-PdTe
+dustAtlarus e=390   W3C
+dustBlack%20Steel e=200   Fe4C-MnZnThO3
+dustCarmot e=370   Ni-ReCl3
+dustCelenegil e=200   PtReB2
+dustCeruclase e=340   Os3(CO)12
+dustDamascus%20Steel e=200   Cu3Fe2Sn
+dustDeep%20Iron e=330   MnFeZnCO3
+dustDesichalkos e=200   Pd3TiUO2(NO3)2
+dustEximite e=320   Pd3Ti
+dustHaderoth e=200   Pd-NbC=RuTe2
+dustHepatizon e=200   Au2Cu3Sn
+dustIgnatius e=240   O3PdSi
+dustInfuscolium e=350   Fe3Th
+dustInolashite e=200   Os3(CO)12-ZrO2
+dustKalendrite e=360   BN
+dustLemurite e=280   LiC2H5O
+dustMeutoite e=370   Es(NO3)3
+dustMidasium e=300   Au3Cn
+dustMithril e=370   Pd-NbC
+dustOrichalcum e=370   ReB2
+dustOureclase e=360   HgTeO3
+dustPrometheum e=300   CeFeZn
+dustRubracium e=380   RuTe2
+dustSanguinite e=380   TiVFeC-Co(NO3)2
+dustShadow%20Iron e=270   Fe4NiS4
+dustShadow%20Steel e=200   LiC2H5O-Fe4NiS4
+dustTartarite e=200   W3C-Cn-Co(BrO3)2 water 6
+dustVulcanite e=380   Al-Cr2O3
+dustVyroxeres e=310   ZnWO4
+

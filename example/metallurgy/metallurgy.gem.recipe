@@ -1,0 +1,39 @@
+# metallurgy.ore.gem.recipe    
+gemAdamantine e=980   Cn-Co(BrO3)2 water 6
+gemAdluorite e=930   ZrO2
+gemAmordrine e=620   Pt-BN
+gemAngmallen e=620   (FeAu)2
+gemAredrite e=930   CCeRu
+gemAstral%20Silver e=950   Ag-Ni-PdTe
+gemAtlarus e=990   W3C
+gemBlack%20Steel e=620   Fe4C-MnZnThO3
+gemCarmot e=950   Ni-ReCl3
+gemCelenegil e=620   PtReB2
+gemCeruclase e=900   Os3(CO)12
+gemDamascus%20Steel e=620   Cu3Fe2Sn
+gemDeep%20Iron e=880   MnFeZnCO3
+gemDesichalkos e=620   Pd3TiUO2(NO3)2
+gemEximite e=850   Pd3Ti
+gemHaderoth e=620   Pd-NbC=RuTe2
+gemHepatizon e=620   Au2Cu3Sn
+gemIgnatius e=690   O3PdSi
+gemInfuscolium e=910   Fe3Th
+gemInolashite e=620   Os3(CO)12-ZrO2
+gemKalendrite e=930   BN
+gemLemurite e=780   LiC2H5O
+gemManganese    
+gemMeutoite e=950   Es(NO3)3
+gemMidasium e=820   Au3Cn
+gemMithril e=950   Pd-NbC
+gemOrichalcum e=950   ReB2
+gemOureclase e=930   HgTeO3
+gemPrometheum e=820   CeFeZn
+gemQuicksilver    
+gemRubracium e=970   RuTe2
+gemSanguinite e=970   TiVFeC-Co(NO3)2
+gemShadow%20Iron e=750   Fe4NiS4
+gemShadow%20Steel e=620   LiC2H5O-Fe4NiS4
+gemTartarite e=620   W3C-Cn-Co(BrO3)2 water 6
+gemVulcanite e=970   Al-Cr2O3
+gemVyroxeres e=830   ZnWO4
+

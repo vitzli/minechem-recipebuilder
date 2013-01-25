@@ -1,0 +1,39 @@
+# metallurgy.ore.block.recipe    
+blockAdamantine e=5967  m=9 Cn-Co(BrO3)2 water 6
+blockAdluorite e=5508  m=9 ZrO2
+blockAmordrine e=3060  m=9 Pt-BN
+blockAngmallen e=3060  m=9 (FeAu)2
+blockAredrite e=5508  m=9 CCeRu
+blockAstral%20Silver e=5661  m=9 Ag-Ni-PdTe
+blockAtlarus e=5967  m=9 W3C
+blockBlack%20Steel e=3060  m=9 Fe4C-MnZnThO3
+blockCarmot e=5661  m=9 Ni-ReCl3
+blockCelenegil e=3060  m=9 PtReB2
+blockCeruclase e=5278  m=9 Os3(CO)12
+blockDamascus%20Steel e=3060  m=9 Cu3Fe2Sn
+blockDeep%20Iron e=5049  m=9 MnFeZnCO3
+blockDesichalkos e=3060  m=9 Pd3TiUO2(NO3)2
+blockEximite e=4896  m=9 Pd3Ti
+blockHaderoth e=3060  m=9 Pd-NbC=RuTe2
+blockHepatizon e=3060  m=9 Au2Cu3Sn
+blockIgnatius e=3595  m=9 O3PdSi
+blockInfuscolium e=5355  m=9 Fe3Th
+blockInolashite e=3060  m=9 Os3(CO)12-ZrO2
+blockKalendrite e=5508  m=9 BN
+blockLemurite e=4360  m=9 LiC2H5O
+blockManganese    
+blockMeutoite e=5661  m=9 Es(NO3)3
+blockMidasium e=4590  m=9 Au3Cn
+blockMithril e=5661  m=9 Pd-NbC
+blockOrichalcum e=5737  m=9 ReB2
+blockOureclase e=5508  m=9 HgTeO3
+blockPrometheum e=4590  m=9 CeFeZn
+blockQuicksilver    
+blockRubracium e=5814  m=9 RuTe2
+blockSanguinite e=5814  m=9 TiVFeC-Co(NO3)2
+blockShadow%20Iron e=4054  m=9 Fe4NiS4
+blockShadow%20Steel e=3060  m=9 LiC2H5O-Fe4NiS4
+blockTartarite e=3060  m=9 W3C-Cn-Co(BrO3)2 water 6
+blockVulcanite e=5814  m=9 Al-Cr2O3
+blockVyroxeres e=4666  m=9 ZnWO4
+
