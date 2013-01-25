@@ -28,7 +28,7 @@ PROCESS = (
 "drop",
 )
 
-def create_dict():
+def createDict():
     """ Create StringIO dictionary for elements separation """
     d = dict()
     for item in PROCESS:
@@ -36,40 +36,42 @@ def create_dict():
     d["other"] = io.StringIO() # here goes everything else
     return d
 
-def get_category(s):
+def getCategory(s):
     """get category from element"""
     for item in PROCESS:
         if s.startswith(item):
             return item
     return "other"
 
-def dumptofile(filename,content):
+def dumpToFile(filename,content):
     """put all CONTENT to FILENAME"""
     f = open(filename,'wt')
     print('#',filename,file=f)
     f.write(content.getvalue())
     f.close()
 
-def write_files(base_name,dictionary):
+def writeFiles(base_name,dictionary):
     """put every value of DICTIONARY to file BASE_NAME.key.recipe"""
     for k, io_obj in dictionary.items():
         content = io_obj.getvalue()
         fn = "{base}.{cls}.recipe".format(base=base_name,cls=k)
         if len(content)!=0:
-            dumptofile(fn,io_obj)
+            dumpToFile(fn,io_obj)
 
-dct = create_dict()
+def processLog(logObject):
+    dct = createDict()
+    for line in logObject:
+        nl = line.strip('\n')
+        nl = nl.strip()
+        nl = up.quote(nl)
+        print(nl,'->', getCategory(nl))
+        print(nl,file=dct[getCategory(nl)])
+    return dct
 
-fn = sys.argv[1]
-
-fn_name = path.splitext(fn)
-
-logFile = open(fn,"rt")
-for line in logFile:
-    nl = line.strip('\n')
-    nl = nl.strip()
-    nl = up.quote(nl)
-    print(nl,'->', get_category(nl))
-    print(nl,file=dct[get_category(nl)])
-    
-write_files(fn_name[0],dct)
+if __name__ == '__main__':
+    fn = sys.argv[1]
+    fn_name = path.splitext(fn)
+    logFile = open(fn,"rt")
+    log_dict = processLog(logFile)
+    writeFiles(fn_name[0],dct)
+    logFile.close()
